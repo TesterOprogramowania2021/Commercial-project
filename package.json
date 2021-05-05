@@ -1,0 +1,18 @@
+{
+  "name": "polkontel",
+  "version": "1.0.0",
+  "description": "Cypress Automation tests for Polkontel company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "inż.Szymon Wasiak",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.1.0",
+    "cypress-wait-until": "^1.7.1"
+  },
+  "dependencies": {
+    "cypress-file-upload": "^5.0.6"
+  }
+}

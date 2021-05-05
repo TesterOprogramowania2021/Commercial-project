@@ -1,0 +1,14 @@
+{
+    
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 10000,
+    "pageLoadTimeout": 10000,
+    "modifyObstructiveCode": false,
+    "video":true,
+    "retries": 2,
+    "env": {
+        "plush_bez_limitu": "https://uat.plushbezlimitu.pl/",
+        "plush_bez_limitu_produkcja": "https://www.plushbezlimitu.pl/"
+    }
+}
+
