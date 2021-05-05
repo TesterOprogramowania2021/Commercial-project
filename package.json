@@ -4,7 +4,7 @@
   "description": "Cypress Automation tests for Polkontel company",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run-first-smoke-test": "npx cypress run --spec cypress/integration/plushbezlimitu/smoke_tests/plush_smoke_tests.js"
   },
   "author": "inż.Szymon Wasiak",
   "license": "ISC",

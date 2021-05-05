@@ -18,7 +18,7 @@ class Plush_phone_page {
         // cy.verifyURLadress(data.step1URL);
         cy.get(phonePageSelectors.buttonGetNewNumber,{ timeout: 15000 }).click({force:true})
         cy.get(phonePageSelectors.logoImage, {timeout:10000}).should("be.visible")
-        cy.reload()
+        // cy.reload({timeout:10000})
   
     }
     // clickMoveNumberButton(url) {

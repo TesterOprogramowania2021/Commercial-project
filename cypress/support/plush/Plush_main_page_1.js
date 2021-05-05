@@ -18,7 +18,7 @@ class Plush_main_page {
 
     //metoda otwierająca główną stronę Plush
     getPlushMainPage() {
-        cy.visit(Cypress.env("plush_bez_limitu"),{timeout:10000});
+        cy.visit(Cypress.env("plush_bez_limitu_produkcja"),{timeout:10000});
         // cy.verifyURLadress(urlPath)
         // "plush_bez_limitu": "https://uat.plushbezlimitu.pl/",
         // "plush_bez_limitu_produkcja": "https://www.plushbezlimitu.pl/"
