@@ -42,6 +42,7 @@ class Plush_step3_page {
     // }
     clickAcceptButton(){
         cy.get(step3PageSelectors.acceptOrderButton)
+        .scrollIntoView()
         .click({force:true})
     }
     clickConfirmButton(){
