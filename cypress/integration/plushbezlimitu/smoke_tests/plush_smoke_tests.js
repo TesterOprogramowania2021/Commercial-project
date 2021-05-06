@@ -72,7 +72,7 @@ describe("Plush E2E smoke tests", () => {
         plush_step3_page.clickConfirmButton();
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL);
     })
-    it("Placing an order for MNP in the offer of 30 PLN / month with the device", () => {
+    it.only("Placing an order for MNP in the offer of 30 PLN / month with the device", () => {
         plush_main_page.clickOffertFirstRow(data.textGetPhone);
         plush_phones_pages.clickButtonIwontMoveMobileNumber(data.iWontMoveNumber);
         plush_phones_pages.checkedRadiobutton30zlSelection(data.radioButton30zl); 
@@ -94,7 +94,7 @@ describe("Plush E2E smoke tests", () => {
 
         
     })
-    it("Placing an order for MNP in the offer of 30 PLN / month with no device", () => {
+    it.only("Placing an order for MNP in the offer of 30 PLN / month with no device", () => {
         plush_main_page.clickOffertFirstRow(data.textNoPhone);
         plush_main_page.clickOptionWhatYouNeed(data.iwontNewNumberInPlush);
         plush_person_formulage_page.setOTPNumber(data.otpNumber)
@@ -112,7 +112,7 @@ describe("Plush E2E smoke tests", () => {
 
         
     })
-    it("Placing an order for MIG in the offer of 30 PLN / month with device", () => {
+    it.only("Placing an order for MIG in the offer of 30 PLN / month with device", () => {
         plush_main_page.clickOffertFirstRow(data.textGetPhone);
         plush_phones_pages.clickButtonWontAbo()
         plush_phones_pages.checkedRadiobutton30zlSelection(data.radioButton30zl); 
@@ -131,7 +131,7 @@ describe("Plush E2E smoke tests", () => {
 
         
     })
-    it("Placing an order for MIG in the offer of 30 PLN / month with no device", () => {
+    it.only("Placing an order for MIG in the offer of 30 PLN / month with no device", () => {
         plush_main_page.clickOffertFirstRow(data.textNoPhone);
         plush_main_page.clickOptionWhatYouNeed(data.goToPlushFromCartToAbo);
         plush_person_formulage_page.setOTPNumber(data.mixPlusNumber)
