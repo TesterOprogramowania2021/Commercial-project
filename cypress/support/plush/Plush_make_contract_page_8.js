@@ -14,17 +14,21 @@ const contractPageSelector = {
 class Plush_contract_page {
 
     typePhoneNumber(phone, textWritePhoneNumber){
-        cy.get(contractPageSelector.writleTitleTextSelector).should("have.text",textWritePhoneNumber)
-        cy.get(contractPageSelector.phoneInput).type(phone)
-        cy.get(contractPageSelector.sendPhoneButton).click({force:true});
+        cy
+            .get(contractPageSelector.writleTitleTextSelector)
+            .should("have.text",textWritePhoneNumber)
+            .get(contractPageSelector.phoneInput,{timeout:15000})
+            .type(phone)
+            .get(contractPageSelector.sendPhoneButton)
+            .click({force:true});
     }
-
-
-  
    
     typeAndAcceptPassword(password) {
-        cy.get(contractPageSelector.passwordInut).type(password);
-        cy.get(contractPageSelector.sendButton).click({force:true});
+        cy
+            .get(contractPageSelector.passwordInut)
+            .type(password)
+            .get(contractPageSelector.sendButton)
+            .click({force:true});
         
     }
 

@@ -16,11 +16,14 @@ class Plush_finished_page {
 
     assertThenksTextAndOrderNumber(thenxTextData,url) {
         // cy.verifyURLadress(url)
-        cy.get(finishedPageSelectors.logoImage, {timeout:100000}).should("be.visible")
-        cy.get(finishedPageSelectors.thenxText, {timeout: 200000})
-        .contains(thenxTextData);
-        cy.get(finishedPageSelectors.orderNumber,{timeout:100000}).should("be.visible",{timeout:100000});
-        cy.verifyURLadress(url)
+        cy
+        .get(finishedPageSelectors.logoImage, {timeout:100000})
+        .should("be.visible")
+        .get(finishedPageSelectors.thenxText, {timeout: 200000})
+        .contains(thenxTextData)
+        .get(finishedPageSelectors.orderNumber,{timeout:100000})
+        .should("be.visible",{timeout:100000})
+        .verifyURLadress(url);
 
     }
     getOrderNumberToFile(pathToFile){

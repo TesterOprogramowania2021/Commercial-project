@@ -1,5 +1,5 @@
 {
-    
+    "baseUrl": "https://uat.plus.pl/",
     "chromeWebSecurity": false,
     "defaultCommandTimeout": 10000,
     "pageLoadTimeout": 10000,
@@ -8,6 +8,7 @@
     "retries": 2,
     "viewportWidth": 1920,
     "viewportHeight":1080,
+    "projectId": "bne3dm",
   
     "env": {
         "plush_bez_limitu": "https://uat.plushbezlimitu.pl/",

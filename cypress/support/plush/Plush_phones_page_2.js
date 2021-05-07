@@ -21,55 +21,60 @@ class Plush_phones_pages {
 
 
     clickButtonNewNumber() {
-        cy.get(phonesPageSelectors.wontNewNumberButton,{timeout: 10000}).click().then(($el) => {
+        cy
+            .get(phonesPageSelectors.wontNewNumberButton,{timeout: 10000})
+            .click()
+            .then(($el) => {
             //weryfikacja koloru buttona 
-            expect($el).contain(data.iWontNewNumber);
-            expect($el).to.have.css("background");
+            expect($el)
+            .contain(data.iWontNewNumber);
+            expect($el)
+            .to.have.css("background");
         })
     }
     checkedRadiobutton30zlSelection(pricePearMonth) {
-        cy.get(phonesPageSelectors.offerSelection, {timeout:10000})
+        cy
+            .get(phonesPageSelectors.offerSelection, {timeout:10000})
             .contains(data.radioButton30zl)
             .find(phonesPageSelectors.radiobutton)
             .should("be.checked")
-            
-           
     }
     clickCheckedButtonPhone(checkedText, phoneURL) {
 
        
-        cy.get(phonesPageSelectors.mainPhoneListing,{ timeout: 15000 })
+        cy
+            .get(phonesPageSelectors.mainPhoneListing,{ timeout: 15000 })
             .contains(checkedText,{timeout: 5000})
             .first().should("have.css", "background-image", "linear-gradient(rgb(255, 218, 93), rgb(250, 193, 0))",{timeout:3000})
             .click({ force: true })
             // .wait(3000);
-        cy.verifyURLadress(phoneURL, { timeout: 10000 })
+            .verifyURLadress(phoneURL, { timeout: 10000 })
             
     }
     clickButtonIwontMoveMobileNumber(newNumberText){
-        cy.get(phonesPageSelectors.listPinkButtons,{timeout:5000}).first().then(($el) => {
-            
-            //weryfikacja koloru buttona 
+        cy
+            .get(phonesPageSelectors.listPinkButtons,{timeout:5000})
+            .first().then(($el) => {
             expect($el).contain(newNumberText);
             expect($el).to.have.css("background");
         })
-
-      
     }
     clickButtonWontAbo() {
-        cy.get(phonesPageSelectors.iwontChangeForAbo).click().then(($el) => {
-            //weryfikacja koloru buttona 
+        cy.
+            get(phonesPageSelectors.iwontChangeForAbo)
+            .click().then(($el) => {
             expect($el).contain(data.iWontMoveForAbonament);
             expect($el).to.have.css("background");
         })
 
     }
     clickButtonMakeContract(makeConractText) {
-        cy.get(phonesPageSelectors.makeContractButton).click().then(($el) => {
-            //weryfikacja koloru buttona 
-            expect($el).contain(makeConractText);
-            expect($el).to.have.css("background");
-            cy.url().should("contain","/przedluz")
+        cy
+            .get(phonesPageSelectors.makeContractButton)
+            .click().then(($el) => {
+            expect($el).contain(makeConractText)
+            expect($el).to.have.css("background")
+            .url().should("contain","/przedluz")
         })
 
 

@@ -9,7 +9,7 @@ const mainPageSelector = {
     desktopOffersKolButtons: ".col-buttons",
     modalId: "#modal",
     popUpAllElements: ".plush-popup-offers"
-    
+
 
 }
 
@@ -18,36 +18,42 @@ class Plush_main_page {
 
     //metoda otwierająca główną stronę Plush
     getPlushMainPage() {
-        cy.reload({timeout:5000});
-        cy.visit(Cypress.env("plush_bez_limitu"),{timeout:15000});
-        cy.validate200ResponseCode(Cypress.env("plush_bez_limitu"),{timeout:30000})
-        // cy.verifyURLadress(urlPath)
-        // "plush_bez_limitu": "https://uat.plushbezlimitu.pl/",
-        // "plush_bez_limitu_produkcja": "https://www.plushbezlimitu.pl/"
-       
+        cy
+            .reload({ timeout: 5000 })
+            .visit(Cypress.env("plush_bez_limitu"), { timeout: 15000 })
+            .validate200ResponseCode(Cypress.env("plush_bez_limitu"), { timeout: 30000 })
+            .verifyURLadress(Cypress.env("plush_bez_limitu"))
+    
     }
     //metoa akceptująca pliki cookies oraz regulamin rodo
     clearCookies() {
-        cy.clearCookiesAndLocalStages()
-        
+        cy
+            .clearCookiesAndLocalStages()
+
     }
-    acceptRodo(){
-    cy.acceptRodo(mainPageSelector.rodoAcceptButton)
+    acceptRodo() {
+        cy
+            .acceptRodo(mainPageSelector.rodoAcceptButton)
     }
     clickOffertFirstRow(getText) {
-        cy.get(mainPageSelector.desktopOffersFirstRow).find(mainPageSelector.desktopOffersKolButtons).contains(getText).click({ force: true })
+        cy
+            .get(mainPageSelector.desktopOffersFirstRow)
+            .find(mainPageSelector.desktopOffersKolButtons)
+            .contains(getText)
+            .click({ force: true })
 
     }
-    clickOptionWhatYouNeed(newNumberText){
-        cy.get(mainPageSelector.modalId)
-        .find(mainPageSelector.popUpAllElements)
-        .contains(newNumberText)
-        .click({force: true});
+    clickOptionWhatYouNeed(newNumberText) {
+        cy
+            .get(mainPageSelector.modalId)
+            .find(mainPageSelector.popUpAllElements)
+            .contains(newNumberText, {timeout:15000})
+            .click({ force: true });
 
     }
 
-    
-   
+
+
 
 
 

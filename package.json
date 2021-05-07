@@ -4,7 +4,11 @@
   "description": "Cypress Automation tests for Polkontel company",
   "main": "index.js",
   "scripts": {
-    "run-first-smoke-test": "npx cypress run --spec cypress/integration/plushbezlimitu/smoke_tests/plush_smoke_tests.js"
+    "run-first-smoke-test": "npx cypress run --spec cypress/integration/plushbezlimitu/smoke_tests/plush_smoke_tests.js",
+    "run-all-tests-dashboard": "npx cypress run --record --key 3d4f1f20-188d-404a-89a7-d625fed6aada",
+    "run-all-tests-headed" : "npx cypress run --headed",
+    "run-all-tests-chrome": "cypress run --browser chrome"
+
   },
   "author": "inż.Szymon Wasiak",
   "license": "ISC",

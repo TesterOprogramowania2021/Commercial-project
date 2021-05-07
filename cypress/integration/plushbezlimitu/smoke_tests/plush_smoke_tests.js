@@ -33,12 +33,11 @@ describe("Plush E2E smoke tests", () => {
     beforeEach(() => {
         
         plush_main_page.clearCookies();
-        plush_main_page.getPlushMainPage();
+        plush_main_page.getPlushMainPage(data.urlAdress);
         plush_main_page.acceptRodo();
 
     // metoda akceptująca wyjątek     
         Cypress.on('uncaught:exception', (err, runnable) => {
-            // expect(err.message).to.include('Ignoring error for now');
             return false;
           });
         
@@ -112,7 +111,7 @@ describe("Plush E2E smoke tests", () => {
         plush_step3_page.clickAcceptButton();
         plush_step3_page.clickConfirmButton();
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL)
-
+        plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
         
     })
     it("Placing an order for MIG in the offer of 30 PLN / month with device", () => {
