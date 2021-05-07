@@ -28,7 +28,7 @@ class Plush_finished_page {
     }
     getOrderNumberToFile(pathToFile){
         cy.get(finishedPageSelectors.orderNumber).then((text1)=>{
-            cy.writeFile(pathToFile,text1.text())
+            cy.writeFile(pathToFile,text1.text() + "\n",{flag: "a+"})
 
 
         })
