@@ -44,7 +44,16 @@ Cypress.Commands.add("verifyURLadress",urlPath=>{
     // })
 
 })
+Cypress.Commands.add("validate200ResponseCode",(url)=>{
+    let result;
+    result = cy.request(url)
+    result.its("status").should("equal",200)
+    
+})
+
+
+
+
+
 import 'cypress-wait-until';
-
-
 import 'cypress-file-upload';

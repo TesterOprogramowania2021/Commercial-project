@@ -24,6 +24,7 @@
     "mixPlusNumber": "600370326",
     "mixPlusNumberRET": "506938542",   
     "uatPassword": "1111",
+    "pathToOrderNumbersFile": "cypress/fixtures/orderNumbers.txt",
     "userDataFormulage":
     [
         "test",

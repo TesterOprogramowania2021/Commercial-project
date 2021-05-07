@@ -18,11 +18,12 @@ class Plush_main_page {
 
     //metoda otwierająca główną stronę Plush
     getPlushMainPage() {
-        cy.visit(Cypress.env("plush_bez_limitu_produkcja"),{timeout:10000});
+        cy.reload({timeout:5000});
+        cy.visit(Cypress.env("plush_bez_limitu"),{timeout:15000});
+        cy.validate200ResponseCode(Cypress.env("plush_bez_limitu"),{timeout:30000})
         // cy.verifyURLadress(urlPath)
         // "plush_bez_limitu": "https://uat.plushbezlimitu.pl/",
         // "plush_bez_limitu_produkcja": "https://www.plushbezlimitu.pl/"
-      
        
     }
     //metoa akceptująca pliki cookies oraz regulamin rodo

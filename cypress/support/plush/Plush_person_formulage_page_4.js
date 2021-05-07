@@ -19,7 +19,8 @@ const personFormulagePageSelectors = {
     webOberatorDropDown: ":nth-child(3) > :nth-child(1) > .select-container > .selected-option",
     selectOptions : ".select-option",
     selectService : ".select-container > .selected-option",
-    forFinishedTime: "na koniec okresu wypowiedzenia"
+    forFinishedTime: "na koniec okresu wypowiedzenia",
+    priceFormulagePerson: ".amount"
 
    
 
@@ -32,8 +33,10 @@ class Plush_person_formulage_page {
    
     
 
-    fillFormulage(firstName, lastName, email, phoneNumber, presonId, documentId, url) {
+    fillFormulage(firstName, lastName, email, phoneNumber, presonId, documentId, price) {
         cy
+        .get(personFormulagePageSelectors.firstName,{ timeout: 30000 })
+        // .reload({timeout:30000})
         .get(personFormulagePageSelectors.firstName,{ timeout: 30000 })
         .type(firstName)
         .verifyURLadress(data.step1URL)
@@ -48,6 +51,7 @@ class Plush_person_formulage_page {
         .get(personFormulagePageSelectors.idNumber)
         .type(documentId,{ force: true })
         .get(personFormulagePageSelectors.buttonNext)
+
         .click();
     }
     setOTPNumber(otpPhoneNumber) {
@@ -63,7 +67,7 @@ class Plush_person_formulage_page {
         .contains(textPrice)
     }
     setAndAcceptPassword(password){
-        cy.get(personFormulagePageSelectors.passwordInput,{timeout:5000})
+        cy.get(personFormulagePageSelectors.passwordInput,{timeout:10000})
         .type(password)
         .get(personFormulagePageSelectors.buttonSend)
         .click({force:true})
@@ -81,6 +85,8 @@ class Plush_person_formulage_page {
     setNumberDateTransfer(){
         cy.contains(personFormulagePageSelectors.forFinishedTime).click({force: true})
     }
+   
+  
   
 
 
