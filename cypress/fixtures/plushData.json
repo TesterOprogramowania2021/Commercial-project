@@ -64,4 +64,29 @@
         
        
     ]
+    ,
+    "pricingList":
+    [
+        "REGULAMINY PLUSH ABO",
+        "Aktualne cenniki",
+        "Cennik świadczenia usług telekomunikacyjnych taryfy „PLUSH ABO III” (od 13.01.2021)",
+        "api",
+        "Cennik połączeń międzynarodowych i w roamingu międzynarodowym 4 (od 13.01.2021)",
+        "Umowa świadczenia usług telekomunikacyjnych"
+
+         
+       
+    ],
+    "urlPricingList":
+    [
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/20210113plushaboIII.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/20210113polaczeniamiedzynarodoweroaming4.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/UOSUT-Abonament.pdf"
+    ],
+    "eq":
+    [
+        "0",
+        "1",
+        "2"
+    ]
 }

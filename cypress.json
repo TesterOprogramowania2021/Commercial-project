@@ -2,7 +2,7 @@
     "baseUrl": "https://uat.plus.pl/",
     "chromeWebSecurity": false,
     "defaultCommandTimeout": 10000,
-    "pageLoadTimeout": 10000,
+    "pageLoadTimeout": 60000,
     "modifyObstructiveCode": false,
     "video":true,
     "retries": 2,
@@ -12,7 +12,8 @@
   
     "env": {
         "plush_bez_limitu": "https://uat.plushbezlimitu.pl/",
-        "plush_bez_limitu_produkcja": "https://www.plushbezlimitu.pl/"
+        "plush_bez_limitu_produkcja": "https://www.plushbezlimitu.pl/",
+        "plush_bez_limitu_cenniki_UAT": "https://uat.plushbezlimitu.pl/regulaminy"
     }
 }
 

@@ -22,7 +22,7 @@ class Plush_main_page {
             .reload({ timeout: 5000 })
             .visit(Cypress.env("plush_bez_limitu"), { timeout: 15000 })
             .validate200ResponseCode(Cypress.env("plush_bez_limitu"), { timeout: 30000 })
-            .verifyURLadress(Cypress.env("plush_bez_limitu"))
+            // .verifyURLadress(Cypress.env("plush_bez_limitu"))
     
     }
     //metoa akceptująca pliki cookies oraz regulamin rodo
