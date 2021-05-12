@@ -1,17 +1,17 @@
 {
     "urlAdress": "https://uat.plushbezlimitu.pl/",
-    "textGetPhone":"DOBIERZ TELEFON",
+    "textGetPhone": "DOBIERZ TELEFON",
     "textNoPhone": "KUP BEZ TELEFONU",
     "textNewNumber": "Nowy numer",
-    "radioButton30zl":"30 zł/mies.",
+    "radioButton30zl": "30 zł/mies.",
     "urlNewPhones": "/telefony/nowy-numer",
     "iWontNewNumber": "Chcę nowy numer",
     "iWontMoveNumber": "Chcę przenieść numer",
     "iWontMoveForAbonament": "Chcę przejść na abonament",
-    "iwontNewNumberInPlush" : " Przenieś numer do Plusha ",  
-    "makeContractText" : "Przedłuż umowę",
-    "goToPlushFromCartToAbo" : "Przejdź z plush/plus na kartę na plush abonament ",  
-    "writePhoneNumberText" : "Wpisz numer telefonu i sprawdź ofertę dla Ciebie",
+    "iwontNewNumberInPlush": " Przenieś numer do Plusha ",
+    "makeContractText": "Przedłuż umowę",
+    "goToPlushFromCartToAbo": "Przejdź z plush/plus na kartę na plush abonament ",
+    "writePhoneNumberText": "Wpisz numer telefonu i sprawdź ofertę dla Ciebie",
     "checked": "Sprawdź",
     "phoneURL": "telefon",
     "step1URL": "shopping-flow/step1",
@@ -22,71 +22,87 @@
     "thxTextLastPage": "Dziękujemy za złożenie zamówienia",
     "otpNumber": "797915461",
     "mixPlusNumber": "600370326",
-    "mixPlusNumberRET": "506938542",   
+    "mixPlusNumberRET": "506938542",
     "uatPassword": "1111",
     "pathToOrderNumbersFile": "cypress/fixtures/orderNumbers.txt",
-    "userDataFormulage":
-    [
+    "userDataFormulage": [
         "test",
         "testSurname",
         "test111@gmail.com",
         "123123123",
-        "79032399912", 
+        "79032399912",
         "AVH686152"
     ],
-    "adressDataFormulage":
-    [
+    "adressDataFormulage": [
         "Lipowa",
         "12",
         "1",
         "12-159",
         "Testowa"
-
     ],
-    "documentName":
-    [
+    "documentName": [
         "Legitymacja emeryta/rencisty"
     ],
-    "prices":
-    [
+    "prices": [
         "30 zł"
-       
     ],
-    "webOperators":
-    [
+    "webOperators": [
         "PLAY – P4 Sp. z o.o.",
         "Orange – Orange Polska S.A"
-       
     ],
-    "services":
-    [
+    "services": [
         "Abonament"
-        
-       
-    ]
-    ,
-    "pricingList":
-    [
+    ],
+    "pricingList": [
         "REGULAMINY PLUSH ABO",
         "Aktualne cenniki",
         "Cennik świadczenia usług telekomunikacyjnych taryfy „PLUSH ABO III” (od 13.01.2021)",
         "api",
         "Cennik połączeń międzynarodowych i w roamingu międzynarodowym 4 (od 13.01.2021)",
-        "Umowa świadczenia usług telekomunikacyjnych"
+        "Umowa świadczenia usług telekomunikacyjnych",
+        "Umowa świadczenia usług telekomunikacyjnych - przeniesienie numeru",
+        "Regulamin Promocji „W Wielkiej Brytanii jak w domu”",
+        "PLUSH ABONAMENT (z dnia 13.01.2021)",
+        "PLUSH ABONAMENT 24 mies. (z dnia 13.01.2021)",
+        "PLUSH ABONAMENT 24 mies. (Outlet) (z dnia 13.01.2021)",
+        "Pakiety w PLUSH ABONAMENT 24 mies. (z dnia 13.01.2021)",
+        "Duety w Plushu (z dnia 1.02.2021)",
+        "Tidal Muzyka (z dnia 13.01.2021)",
+        "HBO GO – PAKIET DANYCH 3 (z dnia 28.01.2021)",
+        "Załącznik nr 2 do Faktury: Regulamin promocyjnej sprzedaży urządzeń (z dnia 13.01.2021)",
+        "Załącznik nr 2 do Faktury: Regulamin promocyjnej sprzedaży urządzeń – dla Stałych Klientów (z dnia 13.01.2021)"
 
-         
-       
     ],
-    "urlPricingList":
-    [
+    "urlPricingList": [
         "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/20210113plushaboIII.pdf",
         "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/20210113polaczeniamiedzynarodoweroaming4.pdf",
-        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/UOSUT-Abonament.pdf"
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/UOSUT-Abonament.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/UOSUT-Abonament-przeniesienie-numeru.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/_Regulamin_w_wb_jak_w_domu.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/20210113regpromoplushabo.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/20210113plushabo24mies.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/20210113plushabo24miesoutlet.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/20210113plushabopakiety24m.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_si/plush_ogolne_reg/duet_plush/2021-02-01/_PLUSH_ABO_Regulamin_Duety_.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/regtidal1301.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regsi/other/hbo/HBO_GOPAKIETDANYCH328.01.2021r.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/20210113regpromosprzedazyurzadzen.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/zazatrzymanie.pdf"
     ],
-    "eq":
-    [
+    "eq": [
         "0",
         "1",
-        "2"
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13"
     ]
 }
