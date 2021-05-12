@@ -46,6 +46,17 @@ class Plush_pricing_list_page {
             .url().should("include",apiURL)  
             .validate200ResponseCode(getRequest0)  
     }
+    checkedFirstActualPricingDocumentContainAssertion(actualPricingText, PricingText0, selector0, apiURL, getRequest0,eq){
+        cy
+            .contains(pricingPageSelectors.actualPricing).should("have.text",actualPricingText)
+        cy
+            .get(pricingPageSelectors.allPricingListSelector).eq(eq).contains(PricingText0)
+        cy
+            .contains(selector0).invoke("removeAttr","target").click({force:true})
+        cy
+            .url().should("include",apiURL)  
+            .validate200ResponseCode(getRequest0)  
+    }
 
 }
 export default Plush_pricing_list_page;
