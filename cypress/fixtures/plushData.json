@@ -117,7 +117,16 @@
         "Taryfa europejska dla PostPaid (od 15.06.2017)",
         "Regulamin Promocji „Roaming w Plush ABO” (od 01.08.2017)",
         "Regulamin Promocji „Roaming w Plush ABO” (od 15.06.2017)",
-        "Regulamin Promocji „Roaming w Plush ABO” (od 31.03.2017)"
+        "Regulamin Promocji „Roaming w Plush ABO” (od 31.03.2017)",
+        "Cennik Taryfy Nowy Plush",
+        "Regulamin Promocji „Plush Internet” (od 13.01.2021)",
+        "Regulamin Promocji „Internet 5G od Plusa” (od 20.01.2021)",
+        "Cennik urządzeń telekomunikacyjnych/innych towarów oferowanych w promocjach typu PLUSH INTERNET",
+        "Regulamin Promocji „Plush Internet LTE – tylko SIM” (od 25.10.2019)",
+        "Regulamin Promocji „Plush Internet LTE ze sprzętem na 24/36 rat z opłatą początkową” (od 1.04.2020)",
+        "Regulamin Promocji „Internet 5G od Plusa” (z dn. 13.01.2021)",
+        "Cennik Taryfy Nowy Plush",
+        "Regulamin Promocji \"Plush Internet LTE - tylko SIM\" - obowiązujący do 25.10.2019"
 
 
     ],
@@ -182,7 +191,16 @@
         "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Tayfa_europejska_postpaid_20170615.pdf",
         "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/PLUSH_ABO_Regulamin_roaming_20170801_do_20.08.pdf",
         "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/PLUSH_ABO_Regulamin_roaming_20170615_do_31.07.pdf",
-        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/PLUSH_ABO_Regulamin_roaming_20170331_do_14.06.pdf"
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/PLUSH_ABO_Regulamin_roaming_20170331_do_14.06.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Cennik_Plush_Internet.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/plush_internet_/Regulamin_Plush_Internet___.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/Regulamin_Promocji_Internet_G_od_Plusa____.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/plush_internet_/Cennik_urzadzen_w_promocjach_Plush_Internet_03_02_2021.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin_Plush_Internet_LTE_tylko_SIM.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin_Plush_Internet_LTE_ze_sprzetem_na_24_36_rat_z_oplata_poczatkowa_01_04_2020.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/regpromo5gPlusa13012021.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Cennik_Plush_Internet.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin_Plush_Internet_LTE_tylko_SIM.pdf"
     ],
     "eq": [
         "0",
@@ -245,7 +263,17 @@
         "57",
         "58",
         "59",
-        "60"
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70"
 
     ]
 }

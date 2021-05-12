@@ -201,7 +201,34 @@ describe("Current price lists", () =>{
     it("Terms and Conditions of the Promotion 'Roaming in Plush ABO' (from 15.06.2017)",()=>{
         plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[62],data.pricingList[62], data.pricingList[3],data.urlPricingList[59],data.eq[59])
     })
-    it.only("Terms and Conditions of the Promotion 'Roaming in Plush ABO' (from 31.03.2017)",()=>{
+    it("Terms and Conditions of the Promotion 'Roaming in Plush ABO' (from 31.03.2017)",()=>{
         plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[63],data.pricingList[63], data.pricingList[3],data.urlPricingList[60],data.eq[60])
+    })
+    it("Price List Tariff New Plush",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[64],data.pricingList[64], data.pricingList[3],data.urlPricingList[61],data.eq[61])
+    })
+    it("Terms and Conditions of the Promotion 'Plush Internet' (from 13.01.2021)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[65],data.pricingList[65], data.pricingList[3],data.urlPricingList[62],data.eq[62])
+    })
+    it("Terms and Conditions of the Promotion 'Internet 5G from Plus' (from 20.01.2021)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[66],data.pricingList[66], data.pricingList[3],data.urlPricingList[63],data.eq[63])
+    })
+    it("Price list of telecommunications equipment/other goods offered in promotions of type PLUSH INTERNET",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[67],data.pricingList[67], data.pricingList[3],data.urlPricingList[64],data.eq[64])
+    })
+    it("Terms and Conditions of the Promotion 'Plush Internet LTE - SIM only' (from 25.10.2019)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[68],data.pricingList[68], data.pricingList[3],data.urlPricingList[65],data.eq[65])
+    })
+    it("Terms and Conditions of the Promotion 'Plush Internet LTE with equipment for 24/36 installments with a starting fee' (from 1.04.2020)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[69],data.pricingList[69], data.pricingList[3],data.urlPricingList[66],data.eq[66])
+    })
+    it("Terms and Conditions of the Promotion 'Internet 5G from Plus' (as of 13.01.2021)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[70],data.pricingList[70], data.pricingList[3],data.urlPricingList[67],data.eq[67])
+    })
+    it("Price List Tariff New Plush",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[71],data.pricingList[71], data.pricingList[3],data.urlPricingList[68],data.eq[68])
+    })
+    it.only("Terms and Conditions of the Promotion 'Plush Internet LTE - SIM only' - valid until 25.10.2019",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[72],data.pricingList[72], data.pricingList[3],data.urlPricingList[69],data.eq[69])
     })
 })
