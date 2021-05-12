@@ -132,4 +132,76 @@ describe("Current price lists", () =>{
     it("Telecommunications service contract",()=>{
         plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[39],data.pricingList[39], data.pricingList[3],data.urlPricingList[36],data.eq[36])
     })
+    it("Price list for the provision of telecommunications services tariff 'Plush ABO II' (from 01.01.2021)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[40],data.pricingList[40], data.pricingList[3],data.urlPricingList[37],data.eq[37])
+    })
+    it("Price list for the provision of telecommunications services tariff 'Plush ABO II' (from 31.08.2020)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[41],data.pricingList[41], data.pricingList[3],data.urlPricingList[38],data.eq[38])
+    })
+    it("Price list for the provision of telecommunications services tariff 'Plush ABO I' (from 01.01.2020)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[42],data.pricingList[42], data.pricingList[3],data.urlPricingList[39],data.eq[39])
+    })
+    it("Price list for the provision of telecommunications services tariff 'Plush ABO I' (from 11.10.2019)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[43],data.pricingList[43], data.pricingList[3],data.urlPricingList[40],data.eq[40])
+    })
+    it("Price list for the provision of telecommunications services tariff 'Plush ABO I' (from 03.10.2019)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[44],data.pricingList[44], data.pricingList[3],data.urlPricingList[41],data.eq[41])
+    })
+    it("Price list for the provision of telecommunications services tariff 'Plush ABO I' (from 15.05.2019)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[45],data.pricingList[45], data.pricingList[3],data.urlPricingList[42],data.eq[42])
+    })
+    it("Price list for the provision of telecommunications services tariff 'Plush ABO I' (from 01.01.2019)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[46],data.pricingList[46], data.pricingList[3],data.urlPricingList[43],data.eq[43])
+    })
+    it("Price list for the provision of telecommunications services tariff 'Plush ABO I' (from 10.10.2018)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[47],data.pricingList[47], data.pricingList[3],data.urlPricingList[44],data.eq[44])
+    })
+    it("Price list of the provision of telecommunications services tariff 'Plush ABO I' (from 25.05.2018)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[48],data.pricingList[48], data.pricingList[3],data.urlPricingList[45],data.eq[45])
+    })
+    it("Price list for the provision of telecommunications services tariff 'Plush ABO' (from 01.01.2020)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[49],data.pricingList[49], data.pricingList[3],data.urlPricingList[46],data.eq[46])
+    })
+    it("Price list of the provision of telecommunications services tariff 'Plush ABO' (from 15.05.2019)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[50],data.pricingList[50], data.pricingList[3],data.urlPricingList[47],data.eq[47])
+    })
+    it("Price list of the provision of telecommunications services tariff 'Plush ABO' (from 01.01.2019)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[51],data.pricingList[51], data.pricingList[3],data.urlPricingList[48],data.eq[48])
+    })
+    it("Price list of the provision of telecommunications services tariff 'Plush ABO' (from 01.01.2018)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[52],data.pricingList[52], data.pricingList[3],data.urlPricingList[49],data.eq[49])
+    })
+    it("Price list for the provision of telecommunications services tariff 'Plush ABO' (from 21.08.2017)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[53],data.pricingList[53], data.pricingList[3],data.urlPricingList[50],data.eq[50])
+    })
+    it("Price list for the provision of telecommunications services tariff 'Plush ABO' (from 31.03.2017)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[54],data.pricingList[54], data.pricingList[3],data.urlPricingList[51],data.eq[51])
+    })
+    it("European tariff for PostPaid 3 (from 21.12.2020)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[55],data.pricingList[55], data.pricingList[3],data.urlPricingList[52],data.eq[52])
+    })
+    it("European tariff for PostPaid 2 (from 01.01.2020)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[56],data.pricingList[56], data.pricingList[3],data.urlPricingList[53],data.eq[53])
+    })
+    it("European tariff for PostPaid 2 (from 01.01.2019)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[57],data.pricingList[57], data.pricingList[3],data.urlPricingList[54],data.eq[54])
+    })
+    it("European tariff for PostPaid 2 (from 25.05.2018)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[58],data.pricingList[58], data.pricingList[3],data.urlPricingList[55],data.eq[55])
+    })
+    it("European tariff for PostPaid 2 (from 01.01.2018)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[59],data.pricingList[59], data.pricingList[3],data.urlPricingList[56],data.eq[56])
+    })
+    it("European tariff for PostPaid (from 15.06.2017)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[60],data.pricingList[60], data.pricingList[3],data.urlPricingList[57],data.eq[57])
+    })
+    it("Terms and Conditions of the Promotion 'Roaming in Plush ABO' (from 01.08.2017)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[61],data.pricingList[61], data.pricingList[3],data.urlPricingList[58],data.eq[58])
+    })
+    it("Terms and Conditions of the Promotion 'Roaming in Plush ABO' (from 15.06.2017)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[62],data.pricingList[62], data.pricingList[3],data.urlPricingList[59],data.eq[59])
+    })
+    it.only("Terms and Conditions of the Promotion 'Roaming in Plush ABO' (from 31.03.2017)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[63],data.pricingList[63], data.pricingList[3],data.urlPricingList[60],data.eq[60])
+    })
 })

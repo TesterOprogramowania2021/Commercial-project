@@ -40,7 +40,6 @@ class Plush_pricing_list_page {
         cy
             .get(pricingPageSelectors.allPricingListSelector).eq(eq).should("have.text", PricingText0)
         cy
-            
             .contains(selector0).invoke("removeAttr","target").click({force:true})
         cy
             .url().should("include",apiURL)  
@@ -50,8 +49,9 @@ class Plush_pricing_list_page {
         cy
             .contains(pricingPageSelectors.actualPricing).should("have.text",actualPricingText)
         cy
-            .get(pricingPageSelectors.allPricingListSelector).eq(eq).contains(PricingText0)
+            .get(pricingPageSelectors.allPricingListSelector).eq(eq).contains("have.text", PricingText0)
         cy
+            
             .contains(selector0).invoke("removeAttr","target").click({force:true})
         cy
             .url().should("include",apiURL)  
