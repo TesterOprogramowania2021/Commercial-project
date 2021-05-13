@@ -336,7 +336,7 @@ describe("Current price lists", () =>{
     it("Terms and Conditions of the 'Video Package' Promotion",()=>{
         plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[107],data.pricingList[107], data.pricingList[3],data.urlPricingList[104],data.eq[104])
     }) 
-    it.only("Tariff price list NEW PLUSH",()=>{
+    it("Tariff price list NEW PLUSH",()=>{
         plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[108],data.pricingList[108], data.pricingList[3],data.urlPricingList[105],data.eq[105])
     }) 
 })
