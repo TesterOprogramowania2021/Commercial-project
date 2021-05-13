@@ -5,7 +5,7 @@ const pricingPageSelectors = {
     rodoAcceptButton: "#rodo-accept-all",
     pricingPlace: ":nth-child(2) > h2",
     actualPricing: "Aktualne cenniki",
-    allPricingListSelector: "[class='document-category full'] >ul >li"
+    allPricingListSelector: ".document-box > .document-category >ul > li"
 
 
 }
@@ -49,10 +49,14 @@ class Plush_pricing_list_page {
         cy
             .contains(pricingPageSelectors.actualPricing).should("have.text",actualPricingText)
         cy
-            .get(pricingPageSelectors.allPricingListSelector).eq(eq).contains( PricingText0)
-        cy
+            .get(pricingPageSelectors.allPricingListSelector)
+            .eq(eq)
+            .contains( PricingText0)
+            .invoke("removeAttr","target")
+            .click({force:true})
+        // cy
             
-            .contains(selector0).invoke("removeAttr","target").click({force:true})
+        //     .contains(selector0).invoke("removeAttr","target").click({force:true})
         cy
             .url().should("include",apiURL)  
             .validate200ResponseCode(getRequest0)  
