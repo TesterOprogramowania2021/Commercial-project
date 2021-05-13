@@ -126,7 +126,11 @@
         "Regulamin Promocji „Plush Internet LTE ze sprzętem na 24/36 rat z opłatą początkową” (od 1.04.2020)",
         "Regulamin Promocji „Internet 5G od Plusa” (z dn. 13.01.2021)",
         "Cennik Taryfy Nowy Plush",
-        "Regulamin Promocji \"Plush Internet LTE - tylko SIM\" - obowiązujący do 25.10.2019"
+        "Regulamin Promocji \"Plush Internet LTE - tylko SIM\" - obowiązujący do 25.10.2019",
+        "Regulamin Promocji \"Plush Internet LTE ze sprzętem na 24/36 rat z opłatą początkową\" - obowiązujący do 25.10.2019",
+        "Załącznik nr 1 do Regulaminu promocji \"Plush Internet LTE ze sprzętem na 24/36 rat z opłatą początkową\" - obowiązujący do 25.10.2019",
+        "Regulamin Promocji \"Plush Internet LTE ze sprzętem na 24/36 rat z opłatą początkową\" - obowiązujący do 25.06.2019",
+        "Załącznik nr 1 do Regulaminu promocji \"Plush Internet LTE ze sprzętem na 24/36 rat z opłatą początkową\""
 
 
     ],
@@ -200,7 +204,11 @@
         "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin_Plush_Internet_LTE_ze_sprzetem_na_24_36_rat_z_oplata_poczatkowa_01_04_2020.pdf",
         "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/regulaminy_plush_abo/regpromo5gPlusa13012021.pdf",
         "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Cennik_Plush_Internet.pdf",
-        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin_Plush_Internet_LTE_tylko_SIM.pdf"
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin_Plush_Internet_LTE_tylko_SIM.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/20190626_Regulamin_Plush_Internet_LTE_ze_sprzetem_na_24_36_rat_z_oplata_poczatkowa.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/20190626_Zal_nr1_do_Reg_Plush_Internet_LTE_ze_sprzetem_na_24_36_rat_z_opl_pocz.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin_Plush_Internet_LTE_ze_sprzetem_na_24_36_rat_zop.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Zal1_do_Regulamin_Plush_Internet_LTE_ze_sprzetem_na_24_36_rat_zop.pdf"
     ],
     "eq": [
         "0",
@@ -273,7 +281,10 @@
         "67",
         "68",
         "69",
-        "70"
+        "70",
+        "71",
+        "72",
+        "73"
 
     ]
 }

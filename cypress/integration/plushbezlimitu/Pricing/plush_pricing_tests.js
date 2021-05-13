@@ -228,7 +228,19 @@ describe("Current price lists", () =>{
     it("Price List Tariff New Plush",()=>{
         plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[71],data.pricingList[71], data.pricingList[3],data.urlPricingList[68],data.eq[68])
     })
-    it.only("Terms and Conditions of the Promotion 'Plush Internet LTE - SIM only' - valid until 25.10.2019",()=>{
+    it("Terms and Conditions of the Promotion 'Plush Internet LTE - SIM only' - valid until 25.10.2019",()=>{
         plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[72],data.pricingList[72], data.pricingList[3],data.urlPricingList[69],data.eq[69])
+    })
+    it("Terms and Conditions of the Promotion 'Plush Internet LTE with equipment for 24/36 installments with start fee' - valid until 25.10.2019",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[73],data.pricingList[73], data.pricingList[3],data.urlPricingList[70],data.eq[70])
+    })
+    it("Annex 1 to the Terms and Conditions of the promotion 'Plush Internet LTE with equipment for 24/36 installments with a starting fee' - valid until 25.10.2019",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[74],data.pricingList[74], data.pricingList[3],data.urlPricingList[71],data.eq[71])
+    })
+    it("Terms and Conditions of the Promotion 'Plush Internet LTE with equipment for 24/36 installments with a starting fee' - valid until 25.06.2019",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[75],data.pricingList[75], data.pricingList[3],data.urlPricingList[72],data.eq[72])
+    })
+    it.only("TAppendix 1 to the Terms and Conditions of the promotion 'Plush Internet LTE with equipment for 24/36 installments with a starting fee'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[76],data.pricingList[76], data.pricingList[3],data.urlPricingList[73],data.eq[73])
     })
 })
