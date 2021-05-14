@@ -22,7 +22,7 @@ describe("Current price lists", () =>{
             plush_pricing_list_page.scrollIntoPricingPlace(data.pricingList[0])
     })
 
-    it.only("Price list for the provision of telecommunications services tariff 'PLUSH ABO III' (from 13.01.2021)",()=>{
+    it("Price list for the provision of telecommunications services tariff 'PLUSH ABO III' (from 13.01.2021)",()=>{
         plush_pricing_list_page.checkedFirstActualPricingDocument(data.pricingList[1],data.pricingList[2],data.pricingList[2], data.pricingList[3],data.urlPricingList[0],0)
     })
     it("Price list of international calls and international roaming 4 (from 13.01.2021)",()=>{
@@ -340,4 +340,136 @@ describe("Current price lists", () =>{
     it("Tariff price list NEW PLUSH",()=>{
         plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[108],data.pricingList[108], data.pricingList[3],data.urlPricingList[105],105)
     }) 
+    it("Price list of international calls and international roaming",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[109],data.pricingList[109], data.pricingList[3],data.urlPricingList[106],106)
+    })
+    it("PLUSH Tariff price list per Card (until 20.12.2020)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[110],data.pricingList[110], data.pricingList[3],data.urlPricingList[107],107)
+    }) 
+    it("Price list plush tariff without limit- contract after 12.02.2015. (until 20.12.2020)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[111],data.pricingList[111], data.pricingList[3],data.urlPricingList[108],108)
+    }) 
+    it("Price list Plush tariff without limit (until 20.12.2020)",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[112],data.pricingList[112], data.pricingList[3],data.urlPricingList[109],109)
+    })
+    it("Terms and Conditions of the Promotion 'Internet, SMS calls, MMS on trial'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[113],data.pricingList[113], data.pricingList[3],data.urlPricingList[110],110)
+    })
+    it("Terms and Conditions of the Promotion '30 GB free for holidays'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[114],data.pricingList[114], data.pricingList[3],data.urlPricingList[111],111)
+    })
+    it("'European promotion for Prepaid Subscribers'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[115],data.pricingList[115], data.pricingList[3],data.urlPricingList[112],112)
+    })
+    it("Terms and Conditions of the 'Bonuses after Top-up' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[116],data.pricingList[116], data.pricingList[3],data.urlPricingList[113],113)
+    })
+    it("Terms and Conditions of the 'Extra Gigabytes to Start' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[117],data.pricingList[117], data.pricingList[3],data.urlPricingList[114],114)
+    })
+    it("Terms and Conditions of the Promotion 'SIM card for 0 PLN per start for transferring a number from another network'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[118],data.pricingList[118], data.pricingList[3],data.urlPricingList[115],115)
+    })
+    it("Terms and Conditions of the Promotion 'Change fare to New Plush'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[119],data.pricingList[119], data.pricingList[3],data.urlPricingList[116],116)
+    })
+    it("Terms and Conditions of the Promotion 'Internet, calls without limit'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[120],data.pricingList[120], data.pricingList[3],data.urlPricingList[117],117)
+    })
+    it("Terms and Conditions of the Promotion 'Internet, Calls, SMS, MMS without limit'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[121],data.pricingList[121], data.pricingList[3],data.urlPricingList[118],118)
+    })
+    it("Terms and Conditions of the Promotion 'Internet, Calls, SMS, MMS on Trial'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[122],data.pricingList[122], data.pricingList[3],data.urlPricingList[119],119)
+    })
+    it("Terms and Conditions of the Promotion 'Internet, SMS, MMS without limit'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[123],data.pricingList[123], data.pricingList[3],data.urlPricingList[120],120)
+    })
+    it("Terms and Conditions of the '5 GB Package' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[124],data.pricingList[124], data.pricingList[3],data.urlPricingList[121],121)
+    })
+    it("Terms and Conditions of the 'Video Package' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[125],data.pricingList[125], data.pricingList[3],data.urlPricingList[122],122)
+    })
+    it("Terms and Conditions of the Promotion 'Year of Validity of account in Plush'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[126],data.pricingList[126], data.pricingList[3],data.urlPricingList[123],123)
+    })
+    it("Terms and Conditions of the Promotion 'Plush Internet Promo BS on starter'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[127],data.pricingList[127], data.pricingList[3],data.urlPricingList[124],124)
+    })
+    it("Regulamin Promocji „Plush Internet Promo BS”",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[128],data.pricingList[128], data.pricingList[3],data.urlPricingList[125],125)
+    })
+    it("Terms and Conditions of the Promotion 'Discount 100 percent for 3 months'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[129],data.pricingList[129], data.pricingList[3],data.urlPricingList[126],126)
+    })
+    it("Terms and Conditions of the Promotion 'Year of Validity of account in Plush'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[130],data.pricingList[130], data.pricingList[3],data.urlPricingList[127],127)
+    })
+    it("Terms and Conditions of the 'No Limit Calls' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[131],data.pricingList[131], data.pricingList[3],data.urlPricingList[128],128)
+    })
+    it("Terms and Conditions of the Promotion 'Calls, SMS, MMS without limit'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[132],data.pricingList[132], data.pricingList[3],data.urlPricingList[129],129)
+    })
+    it("Terms and Conditions of the Promotion 'SMS, MMS without limit'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[133],data.pricingList[133], data.pricingList[3],data.urlPricingList[130],130)
+    })
+    it("Terms and Conditions of the 'Video Package' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[134],data.pricingList[134], data.pricingList[3],data.urlPricingList[131],131)
+    })
+    it("Terms and Conditions of the 'Starters in The New Plush Fare' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[135],data.pricingList[135], data.pricingList[3],data.urlPricingList[132],132)
+    })
+    it("Surf at Night Promotion Terms and Conditions",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[136],data.pricingList[136], data.pricingList[3],data.urlPricingList[133],133)
+    })
+    it("Terms and Conditions of the '5 GB Package' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[137],data.pricingList[137], data.pricingList[3],data.urlPricingList[134],134)
+    })
+    it("Terms and Conditions of the Promotion '60 GB for holidays'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[138],data.pricingList[138], data.pricingList[3],data.urlPricingList[135],135)
+    })
+    it("Terms and Conditions of the Promotion '60 GB for 15 PLN'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[139],data.pricingList[139], data.pricingList[3],data.urlPricingList[136],136)
+    })
+    it("Terms and Conditions of the 'Gigsy to Start' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[140],data.pricingList[140], data.pricingList[3],data.urlPricingList[137],137)
+    })
+    it("YouTube Heavy Tube Terms and Conditions",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[141],data.pricingList[141], data.pricingList[3],data.urlPricingList[138],138)
+    })
+    it("Terms and Conditions of the 'Cheaper to Ukraine' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[142],data.pricingList[142], data.pricingList[3],data.urlPricingList[139],139)
+    })
+    it("EU Packages Promotion Terms and Conditions",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[143],data.pricingList[143], data.pricingList[3],data.urlPricingList[140],140)
+    })
+    it("European promotion for Prepaid Subscribers",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[144],data.pricingList[144], data.pricingList[3],data.urlPricingList[141],141)
+    })
+    it("Terms and Conditions of the Promotion 'Plush Internet Promo BS'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[145],data.pricingList[145], data.pricingList[3],data.urlPricingList[142],142)
+    })
+    it("Terms and Conditions of the 'Gigsy to Start' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[146],data.pricingList[146], data.pricingList[3],data.urlPricingList[143],143)
+    })
+    it("Terms and Conditions of the 'Video Trial Pack' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[147],data.pricingList[147], data.pricingList[3],data.urlPricingList[144],144)
+    })
+    it("Transfer number - Terms and Conditions of the Promotion 'Discount 50 percent for 3 months'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[148],data.pricingList[148], data.pricingList[3],data.urlPricingList[145],145)
+    })
+    it("Terms of Service 'Quota Package on Starters with New Plush Tariff'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[149],data.pricingList[149], data.pricingList[3],data.urlPricingList[146],146)
+    })
+    it("Terms and Conditions of the Promotion 'Roaming in New Plush' - agreements until 14.06.2017",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[150],data.pricingList[150], data.pricingList[3],data.urlPricingList[147],147)
+    })
+    it("Terms and Conditions of the Promotion 'Roaming in New Plush' - agreements after 15.06.2017",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[151],data.pricingList[151], data.pricingList[3],data.urlPricingList[148],148)
+    })
+    it("Terms and Conditions of the 'Plush Case' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[152],data.pricingList[152], data.pricingList[3],data.urlPricingList[149],149)
+    })
 })
