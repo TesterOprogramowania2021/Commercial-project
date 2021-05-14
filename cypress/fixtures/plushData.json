@@ -206,7 +206,28 @@
         "Regulamin Usługi \"Pakiet Kwotowy na starterach z taryfą Nowy Plush\"",
         "Regulamin Promocji \"Roaming w Nowym Plushu\" - umowy do 14.06.2017 r.",
         "Regulamin Promocji \"Roaming w Nowym Plushu\" - umowy po 15.06.2017 r.",
-        "Regulamin Promocji \"Etui w Plushu\""
+        "Regulamin Promocji \"Etui w Plushu\"",
+        "Cennik Taryfy PLUSH na Kartę",
+        "Regulamin Promocji \"Pakiet Facebook\"",
+        "Regulamin Promocji \"Pakiet Internet 0,5 GB\"",
+        "Regulamin Promocji \"Pakiet Internet 2 GB\"",
+        "Regulamin Promocji \"Rozmowy, SMSy bez limitu i Internet\"",
+        "Regulamin Promocji \"SMS bez limitu 9 gr/min i Internet\"",
+        "Regulamin Promocji \"SMS bez limitu i Internet\"",
+        "Regulamin Promocji \"Wiecej internetu w Plush z 1.07.2016\"",
+        "Regulamin uslugi \"Zamiana numeru w ofercie Na Kartę\"",
+        "Cennik Taryfy PLUSH na Kartę (do 20.12.2020 r.)",
+        "Regulamin usługi „Pakiet Kwotowy na starterach z taryfą PLUSH na Kartę”",
+        "Regulamin Promocji „Karta SIM za 0 zł na start w PLUSH na Kartę dla przenoszących numer z innej sieci”",
+        "Regulamin Promocji „DARMOWY DOSTĘP DO LTE w Plus na Kartę, Plus na Kartę Więcej do Wszystkich, Plus na Kartę Więcej Internetu i SMS-ów, Plus na Kartę Więcej w Plusie, Plus na Kartę Więcej przez Rok, Plus na Kartę bez limitu, Plush bez limitu, JA + NA KARTĘ”, PLUSH na Kartę”",
+        "Regulamin „Pakiet Facebook”",
+        "Regulamin Promocji „Pakiet Internet 0,5 GB”",
+        "Regulamin Promocji „Pakiet Internet 2 GB”",
+        "Regulamin Promocji „Rozmowy, SMSy bez limitu i Internet”",
+        "Regulamin Promocji „SMS bez limitu, 9 gr/min i Internet”",
+        "Regulamin Promocji „SMS bez limitu i Internet”",
+        "Regulamin Promocji „Więcej Internetu w Plush”",
+        "Regulamin usługi „Zamiana numeru w ofercie Na Kartę”"
         
 
 
@@ -364,7 +385,28 @@
         "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin1.pdf",
         "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Promocja_Roaming_w_Nowym_Plushu_od_umowy_do_14_06_2017.pdf",
         "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Promocja_Roaming_w_Nowym_Plushu_od_umowy_od_15_06_2017.pdf",
-        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin_Promocji_Etui_w_Plushu_06.11.2017.pdf"
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin_Promocji_Etui_w_Plushu_06.11.2017.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Cennik_PLUSH_NA_KART%C4%98_21.12.2020.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-Promocji-Pakiet-Facebook.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-Promocji-Pakiet-Internet-05-GB.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-Promocji-Pakiet-Internet-2-GB.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-Promocji-Rozmowy-SMSy-bez-limitu-i-Internet.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin_Promocji_SMS_bez_limitu_9_gr_min_i_Internet.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-Promocji-SMS-bez-limitu-i-Internet.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-Promocji-Wiecej-internetu-w-Plush-z-1.07.2016.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-uslugi-Zamiana-numeru-w-ofercie-Na-Karte.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Cennik-PLUSH-NA-KARTE-01.01.2018.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/-Pakiety-Kwotowe-na-starterach-z-taryfa-PLUSH-na-Karte.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/KartaSIM-za-0zl-na-start-w-PLUSH-nakarte-dla-przenoszacych-numer.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-Promocji-Darmowy-Dostep-do-LTE-w-Plusie-na-Karte.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-Promocji-Pakiet-Facebook.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-Promocji-Pakiet-Internet-05-GB.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-Promocji-Pakiet-Internet-2-GB.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-Promocji-Rozmowy-SMSy-bez-limitu-i-Internet.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-Promocji-SMS-bez-limitu-9-gr_min-i-Internet.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-Promocji-SMS-bez-limitu-i-Internet.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-Promocji-Wiecej-internetu-w-Plush-z-1.07.2016.pdf",
+        "https://api.plushbezlimitu.pl/jcr/files/file/adp/files/regulations_lp/plush/regulaminy/Regulamin-uslugi-Zamiana-numeru-w-ofercie-Na-Karte.pdf"
         
        
         

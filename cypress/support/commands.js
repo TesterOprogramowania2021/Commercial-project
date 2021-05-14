@@ -35,19 +35,17 @@ Cypress.Commands.add("acceptRodo",button=>{
 })
 Cypress.Commands.add("verifyURLadress",urlPath=>{
     cy.url().should("contain",urlPath)
-    // cy.url().then(($url) => {
-    //     if($url.includes(urlPath)) {
-    //         expect($url).is.contain(urlPath)
-    //     } else  {
-    //         cy.log("Wrong URL adress!!!")
-    //       }
-    // })
-
-})
+  })
 Cypress.Commands.add("validate200ResponseCode",(url)=>{
     let result;
     result = cy.request(url)
     result.its("status").should("equal",200)
+   
+    
+    
+
+    
+   
     
 })
 
