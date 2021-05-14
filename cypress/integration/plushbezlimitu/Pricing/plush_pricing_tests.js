@@ -15,9 +15,9 @@ describe("Current price lists", () =>{
         })
     })
     beforeEach(()=>{
-            plush_pricing_list_page.visitPricingListPage()
-            plush_pricing_list_page.clearCookies()
+        plush_pricing_list_page.clearCookies()
 
+            plush_pricing_list_page.visitPricingListPage()
             plush_pricing_list_page.acceptRodo()
             plush_pricing_list_page.scrollIntoPricingPlace(data.pricingList[0])
     })

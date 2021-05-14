@@ -148,7 +148,7 @@ describe("Plush E2E smoke tests", () => {
         
     })
 
-    it.only("Placing an order for RET in the offer for 30 PLN / month with the device.", () => {
+    it("Placing an order for RET in the offer for 30 PLN / month with the device.", () => {
         plush_main_page.clickOffertFirstRow(data.textGetPhone);
         plush_phones_pages.clickButtonMakeContract(data.makeContractText);
         plush_contract_page.typePhoneNumber(data.mixPlusNumberRET, data.writePhoneNumberText)

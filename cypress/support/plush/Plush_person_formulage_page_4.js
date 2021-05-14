@@ -20,7 +20,8 @@ const personFormulagePageSelectors = {
     selectOptions : ".select-option",
     selectService : ".select-container > .selected-option",
     forFinishedTime: "na koniec okresu wypowiedzenia",
-    priceFormulagePerson: ".amount"
+    priceFormulagePerson: ".amount",
+    poUPoperator: "[style=\"\"] > .select-container > .selected-option"
 
    
 
@@ -85,7 +86,7 @@ class Plush_person_formulage_page {
     }
     setPopUPWebOperatorService(service){
         cy
-            .get('[style=""] > .select-container > .selected-option')
+            .get(personFormulagePageSelectors.poUPoperator)
             .click({force:true})
         cy
             .contains(service).click({force: true})
