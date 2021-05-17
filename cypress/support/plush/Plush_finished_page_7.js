@@ -15,7 +15,7 @@ class Plush_finished_page {
     
 
     assertThenksTextAndOrderNumber(thenxTextData,url) {
-        // cy.verifyURLadress(url)
+        cy.verifyURLadress(url)
         cy
         .get(finishedPageSelectors.logoImage, {timeout:100000})
         .should("be.visible")

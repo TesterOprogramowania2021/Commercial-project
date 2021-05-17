@@ -54,9 +54,6 @@ class Plush_pricing_list_page {
             .contains( PricingText0)
             .invoke("removeAttr","target")
             .click({force:true})
-        // cy
-            
-        //     .contains(selector0).invoke("removeAttr","target").click({force:true})
         cy
             .url().should("include",apiURL)  
             .validate200ResponseCode(getRequest0)  

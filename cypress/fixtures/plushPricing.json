@@ -1,58 +1,5 @@
 {
-    "urlAdress": "https://uat.plushbezlimitu.pl/",
-    "textGetPhone": "DOBIERZ TELEFON",
-    "textNoPhone": "KUP BEZ TELEFONU",
-    "textNewNumber": "Nowy numer",
-    "radioButton30zl": "30 zł/mies.",
-    "urlNewPhones": "/telefony/nowy-numer",
-    "iWontNewNumber": "Chcę nowy numer",
-    "iWontMoveNumber": "Chcę przenieść numer",
-    "iWontMoveForAbonament": "Chcę przejść na abonament",
-    "iwontNewNumberInPlush": " Przenieś numer do Plusha ",
-    "makeContractText": "Przedłuż umowę",
-    "goToPlushFromCartToAbo": "Przejdź z plush/plus na kartę na plush abonament ",
-    "writePhoneNumberText": "Wpisz numer telefonu i sprawdź ofertę dla Ciebie",
-    "checked": "Sprawdź",
-    "phoneURL": "telefon",
-    "step1URL": "shopping-flow/step1",
-    "step2URL": "shopping-flow/step2",
-    "step3URL": "shopping-flow/step3",
-    "stepLast4URL": "/thank-you",
-    "buttonOrderText": " \n      Zamawiam\n     ",
-    "thxTextLastPage": "Dziękujemy za złożenie zamówienia",
-    "otpNumber": "797915461",
-    "mixPlusNumber": "600370326",
-    "mixPlusNumberRET": "506938542",
-    "uatPassword": "1111",
-    "pathToOrderNumbersFile": "cypress/fixtures/orderNumbers.txt",
-    "userDataFormulage": [
-        "test",
-        "testSurname",
-        "test111@gmail.com",
-        "123123123",
-        "79032399912",
-        "AVH686152"
-    ],
-    "adressDataFormulage": [
-        "Lipowa",
-        "12",
-        "1",
-        "12-159",
-        "Testowa"
-    ],
-    "documentName": [
-        "Legitymacja emeryta/rencisty"
-    ],
-    "prices": [
-        "30 zł"
-    ],
-    "webOperators": [
-        "PLAY – P4 Sp. z o.o.",
-        "Orange – Orange Polska S.A"
-    ],
-    "services": [
-        "Abonament"
-    ],
+    
     "pricingList": [
         "REGULAMINY PLUSH ABO",
         "Aktualne cenniki",

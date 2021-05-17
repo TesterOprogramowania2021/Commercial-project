@@ -15,8 +15,8 @@ describe("Current price lists", () =>{
         })
     })
     beforeEach(()=>{
-        plush_pricing_list_page.clearCookies()
-
+            plush_pricing_list_page.clearCookies()
+            // cy.viewport('iphone-6')
             plush_pricing_list_page.visitPricingListPage()
             plush_pricing_list_page.acceptRodo()
             plush_pricing_list_page.scrollIntoPricingPlace(data.pricingList[0])
@@ -537,5 +537,95 @@ describe("Current price lists", () =>{
     })
     it("Terms and conditions of the service 'Exchange of the number in the offer for the Card'",()=>{
         plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[173],data.pricingList[173], data.pricingList[3],data.urlPricingList[170],170)
+    })
+    it("Terms and Conditions of the Promotion 'SIM card for 0 PLN to start in PLUSH on card for transferring a number from another network'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[174],data.pricingList[174], data.pricingList[3],data.urlPricingList[171],171)
+    })
+    it("Terms and Conditions of the Promotion 'Amount Packages on Starters with PLUSH Card Tariff'",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[175],data.pricingList[175], data.pricingList[3],data.urlPricingList[172],172)
+    })
+    it("Promotion Terms and Conditions 'Change tariff to PLUSH To Card' - archive version",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[176],data.pricingList[176], data.pricingList[3],data.urlPricingList[173],173)
+    })
+    it("Terms and Conditions of the Promotion \"Me + Valentine's Bonus\" - archive version",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[177],data.pricingList[177], data.pricingList[3],data.urlPricingList[174],174)
+    })
+    it("Terms and conditions of the promotion \"Holiday top-up\" - archive version",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[178],data.pricingList[178], data.pricingList[3],data.urlPricingList[175],175)
+    })
+    it("Terms and Conditions of the promotion \"First Bell\" - archive version",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[179],data.pricingList[179], data.pricingList[3],data.urlPricingList[176],176)
+    })
+    it("Plush Mix Tariff Price List for Plus Mix Subscribers - contracts after 12.02.2015",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[180],data.pricingList[180], data.pricingList[3],data.urlPricingList[177],177)
+    })
+    it("Terms and Conditions of the '#zostańwdomu' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[181],data.pricingList[181], data.pricingList[3],data.urlPricingList[178],178)
+    })
+    it("Terms and Conditions of '#zostańwdomu 10 GB' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[182],data.pricingList[182], data.pricingList[3],data.urlPricingList[179],179)
+    })
+    it("Terms and Conditions of #zostańwdomu 20 GB' Promotion",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[183],data.pricingList[183], data.pricingList[3],data.urlPricingList[180],180)
+    })
+    it("'HBO GO DATA PACK 3' TERMS AND CONDITIONS",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[184],data.pricingList[184], data.pricingList[3],data.urlPricingList[181],181)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. - for offers for subscription",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[185],data.pricingList[185], data.pricingList[3],data.urlPricingList[182],182)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. - for offers on the Charter",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[186],data.pricingList[186], data.pricingList[3],data.urlPricingList[183],183)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o.- offers on the Charter",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[187],data.pricingList[187], data.pricingList[3],data.urlPricingList[184],184)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. - subscription offers",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[188],data.pricingList[188], data.pricingList[3],data.urlPricingList[185],185)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. - Subscription",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[189],data.pricingList[189], data.pricingList[3],data.urlPricingList[186],186)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. - Mix",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[190],data.pricingList[190], data.pricingList[3],data.urlPricingList[187],187)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. - Na Karta",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[191],data.pricingList[191], data.pricingList[3],data.urlPricingList[188],188)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. for Subscribers Plus Mix",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[192],data.pricingList[192], data.pricingList[3],data.urlPricingList[189],189)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. for Simplus/Sami Swoi Subscribers",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[193],data.pricingList[193], data.pricingList[3],data.urlPricingList[190],190)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o.- offers on the Charter",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[194],data.pricingList[194], data.pricingList[3],data.urlPricingList[191],191)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. - Na Karta",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[195],data.pricingList[195], data.pricingList[3],data.urlPricingList[192],192)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. for Simplus/Sami Swoi Subscribers",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[196],data.pricingList[196], data.pricingList[3],data.urlPricingList[193],193)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. - subscription offers",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[197],data.pricingList[197], data.pricingList[3],data.urlPricingList[194],194)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. - offers for the Charter",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[198],data.pricingList[198], data.pricingList[3],data.urlPricingList[195],195)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. - Subscription",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[199],data.pricingList[199], data.pricingList[3],data.urlPricingList[196],196)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. - Mix",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[200],data.pricingList[200], data.pricingList[3],data.urlPricingList[197],197)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. - Na Karta",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[201],data.pricingList[201], data.pricingList[3],data.urlPricingList[198],198)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. for Subscribers Plus Mix",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[202],data.pricingList[202], data.pricingList[3],data.urlPricingList[199],199)
+    })
+    it("Regulations for the provision of telecommunications services by Polkomtel Sp. z o.o. for Simplus/Sami Swoi Subscribers",()=>{
+        plush_pricing_list_page.checkedFirstActualPricingDocumentContainAssertion(data.pricingList[1],data.pricingList[203],data.pricingList[203], data.pricingList[3],data.urlPricingList[200],200)
     })
 })
