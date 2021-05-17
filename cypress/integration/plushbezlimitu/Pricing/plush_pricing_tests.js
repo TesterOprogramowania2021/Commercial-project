@@ -10,7 +10,7 @@ describe("Current price lists", () =>{
     const plush_pricing_list_page = new Plush_pricing_list_page();
 
     before(() => {
-        cy.fixture("plushData").then(data => {
+        cy.fixture("plushPricing").then(data => {
             globalThis.data = data;
         })
     })
