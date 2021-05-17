@@ -28,13 +28,16 @@ class Plush_finished_page {
     }
     getOrderNumberToFile(pathToFile){
         cy.get(finishedPageSelectors.orderNumber).then((text1)=>{
-            cy.writeFile(pathToFile,text1.text() + "\n",{flag: "a+"})
+            // var m = moment("2013-02-08T09:30:26Z");
+           let d = new Date();
+           let e = new Date();
+            cy.writeFile(pathToFile,text1.text() + "**"+ d.toLocaleDateString()+"/"+e.toLocaleTimeString()+"\n",{flag: "a+"})
 
 
         })
     }
   
-
+//
   
 
 

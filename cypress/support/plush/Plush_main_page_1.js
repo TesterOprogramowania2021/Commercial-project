@@ -21,7 +21,7 @@ class Plush_main_page {
         cy
             .reload({ timeout: 5000 })
             .visit(Cypress.env("plush_bez_limitu"), { timeout: 15000 })
-            .validate200ResponseCode(Cypress.env("plush_bez_limitu"), { timeout: 30000 })
+            .validate200ResponseCodeSmoke(Cypress.env("plush_bez_limitu"), { timeout: 30000 })
             // .verifyURLadress(Cypress.env("plush_bez_limitu"))
     
     }
