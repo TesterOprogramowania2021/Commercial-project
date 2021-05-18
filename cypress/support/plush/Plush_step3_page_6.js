@@ -7,7 +7,8 @@ const step3PageSelectors = {
     allYourData: "ul[class='fields']",
     checkboxAllAccepts: "input[type='checkbox']",
     acceptOrderButton: "#basket-go-to-thank-you",
-    buttonConfirm: "#confirm"
+    buttonConfirm: "#confirm",
+    popUpText: ".modal-content > .box-info > .box > .message > p"
 }
 
 class Plush_step3_page {
@@ -39,6 +40,10 @@ class Plush_step3_page {
             .get(step3PageSelectors.buttonConfirm, { timeout: 15000 })
             .scrollIntoView()
             .click({ force: true })
+    }
+    acceptPopUp(popUptext){
+        cy.get(step3PageSelectors.popUpText, {timeout:15000}).should("have.text",popUptext, {timeout: 15000})
+
     }
 
 }

@@ -15,7 +15,7 @@ class Plush_finished_page {
     
 
     assertThenksTextAndOrderNumber(thenxTextData,url) {
-        cy.verifyURLadress(url)
+        cy.verifyURLadress(url,{timeout:15000})
         cy
         .get(finishedPageSelectors.logoImage, {timeout:100000})
         .should("be.visible")
@@ -28,10 +28,9 @@ class Plush_finished_page {
     }
     getOrderNumberToFile(pathToFile){
         cy.get(finishedPageSelectors.orderNumber).then((text1)=>{
-            // var m = moment("2013-02-08T09:30:26Z");
            let d = new Date();
            let e = new Date();
-            cy.writeFile(pathToFile,text1.text() + "**"+ d.toLocaleDateString()+"/"+e.toLocaleTimeString()+"\n",{flag: "a+"})
+            cy.writeFile(pathToFile,text1.text() + "  "+ d.toLocaleDateString() + "/" + e.toLocaleTimeString() + "\n" ,{flag: "a+"})
 
 
         })

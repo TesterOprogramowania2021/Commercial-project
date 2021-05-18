@@ -57,11 +57,12 @@ describe("Plush E2E smoke tests", () => {
         plush_step3_page.checkedMainPrice(data.prices[0], data.step3URL);
         plush_step3_page.clickcheckboxAllAccepts()
         plush_step3_page.clickAcceptButton();
+        plush_step3_page.acceptPopUp(data.popUpAcceptData)
         plush_step3_page.clickConfirmButton();
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL);
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
     })
-    it.only("Placing an order for ACQ in the offer of 30 PLN / month with no device", () => {
+    it("Placing an order for ACQ in the offer of 30 PLN / month with no device", () => {
         plush_main_page.clickOffertFirstRow(data.textNoPhone);
         plush_main_page.clickOptionWhatYouNeed(data.textNewNumber);
         plush_person_formulage_page.fillFormulage(data.userDataFormulage[0],data.userDataFormulage[1],data.userDataFormulage[2],data.userDataFormulage[3],data.userDataFormulage[4],data.userDataFormulage[5],data.step1URL)
@@ -69,6 +70,7 @@ describe("Plush E2E smoke tests", () => {
         plush_adress_formulage_page.clickButtonNext();
         plush_step3_page.clickcheckboxAllAccepts()
         plush_step3_page.clickAcceptButton();
+        plush_step3_page.acceptPopUp(data.popUpAcceptDataNoDevice)
         plush_step3_page.clickConfirmButton();
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL);
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
@@ -91,8 +93,10 @@ describe("Plush E2E smoke tests", () => {
         plush_adress_formulage_page.selectDocument(data.documentName[0])
         plush_step3_page.clickcheckboxAllAccepts()
         plush_step3_page.clickAcceptButton();
+        plush_step3_page.acceptPopUp(data.popUpAcceptData)
         plush_step3_page.clickConfirmButton();
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL)
+        plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
 
         
     })
@@ -109,6 +113,7 @@ describe("Plush E2E smoke tests", () => {
         plush_adress_formulage_page.clickButtonNext();
         plush_step3_page.clickcheckboxAllAccepts()
         plush_step3_page.clickAcceptButton();
+        plush_step3_page.acceptPopUp(data.popUpAcceptDataNoDevice)
         plush_step3_page.clickConfirmButton();
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL)
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
@@ -128,9 +133,11 @@ describe("Plush E2E smoke tests", () => {
         plush_adress_formulage_page.selectDocument(data.documentName[0])
         plush_step3_page.clickcheckboxAllAccepts()
         plush_step3_page.clickAcceptButton();
+        plush_step3_page.acceptPopUp(data.popUpAcceptData)
         plush_step3_page.clickConfirmButton();
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL)
-        
+        plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
+   
         
     })
     it("Placing an order for MIG in the offer of 30 PLN / month with no device", () => {
@@ -143,17 +150,19 @@ describe("Plush E2E smoke tests", () => {
         plush_adress_formulage_page.clickButtonNext();
         plush_step3_page.clickcheckboxAllAccepts()
         plush_step3_page.clickAcceptButton();
+        plush_step3_page.acceptPopUp(data.popUpAcceptDataNoDeviceMIG)
         plush_step3_page.clickConfirmButton();
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL)
-        
+        plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
+   
     })
 
-    it("Placing an order for RET in the offer for 30 PLN / month with the device.", () => {
-        plush_main_page.clickOffertFirstRow(data.textGetPhone);
-        plush_phones_pages.clickButtonMakeContract(data.makeContractText);
-        plush_contract_page.typePhoneNumber(data.mixPlusNumberRET, data.writePhoneNumberText)
-        plush_contract_page.typeAndAcceptPassword(data.uatPassword);
-    })
+    // it.only("Placing an order for RET in the offer for 30 PLN / month with the device.", () => {
+    //     plush_main_page.clickOffertFirstRow(data.textGetPhone);
+    //     plush_phones_pages.clickButtonMakeContract(data.makeContractText);
+    //     plush_contract_page.typePhoneNumber(data.mixPlusNumberRET, data.writePhoneNumberText)
+    //     plush_contract_page.typeAndAcceptPassword(data.uatPassword);
+    // })
 
 
 

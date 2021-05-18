@@ -10,6 +10,7 @@ const pricingPageSelectors = {
 
 }
 
+
 class Plush_pricing_list_page {
 
 

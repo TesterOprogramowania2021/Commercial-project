@@ -38,7 +38,7 @@ Cypress.Commands.add("acceptRodo",button=>{
 
 
 Cypress.Commands.add("verifyURLadress",urlPath=>{
-    cy.url().should("contain",urlPath)
+    cy.url().should("contain",urlPath,{timeout: 20000})
   })
 
 

@@ -25,6 +25,9 @@
     "mixPlusNumberRET": "506938542",
     "uatPassword": "1111",
     "pathToOrderNumbersFile": "cypress/fixtures/orderNumbers.txt",
+    "popUpAcceptData": "Aby otrzymać zamówienie, musisz podpisać umowę online. Na adres e-mail podany w zamówieniu wyślemy umowę wraz z linkiem do jej potwierdzenia. Link jest ważny przez 4 dni. Po tym czasie zamówienie zostanie anulowane. Hasło do dokumentów wysłanych w e-mailu to Twój numer [PESEL/NIP] w zależności od tego czy jesteś klientem indywidualnym czy biznesowym. ",
+    "popUpAcceptDataNoDevice": "Aby otrzymać zamówienie, musisz podpisać umowę online. Na adres e-mail podany w zamówieniu wyślemy umowę wraz z linkiem do jej potwierdzenia. Link jest ważny przez 7 dni. Po tym czasie zamówienie zostanie anulowane. Hasło do dokumentów wysłanych w e-mailu to Twój numer [PESEL/NIP] w zależności od tego czy jesteś klientem indywidualnym czy biznesowym. ",
+    "popUpAcceptDataNoDeviceMIG": "Na adres e-mail podany w zamówieniu wyślemy umowę wraz z linkiem do jej potwierdzenia. Link jest ważny przez 7 dni. Po tym czasie zamówienie zostanie anulowane. Hasło do dokumentów wysłanych w e-mailu to Twój numer [PESEL/NIP] w zależności od tego czy jesteś klientem indywidualnym czy biznesowym. ",
     "userDataFormulage": [
         "test",
         "testSurname",
