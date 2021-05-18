@@ -12,7 +12,8 @@ const adressFormulagePageSelectors = {
     buttonNext: "#basket-go-to-step-3",
     employer: "#EMPLOYER",
     phoneEmployer: "#EMPLOYER_PHONE",
-    moneySource: "#OCCUPATION > .select-container > .selected-option"
+    moneySource: "#OCCUPATION > .select-container > .selected-option",
+    documentForm: "[class='input-radio column required valid form-of-concluding-type'] >label"
 
 
 
@@ -45,6 +46,9 @@ class Plush_adress_formulage_page {
     clickButtonNext() {
         cy.get(adressFormulagePageSelectors.buttonNext).click();
 
+    }
+    setForOfDocumentType(index){
+        cy.get(adressFormulagePageSelectors.documentForm).eq(index).click({force: true});
     }
 
 

@@ -18,7 +18,7 @@ class Plush_listing_subscription {
 
     getPlushListingPage() {
         cy
-            .reload({ timeout: 5000 })
+            // .reload({ timeout: 5000 })
             .visit(Cypress.env("plush_bez_limitu_abonament_listing_UAT"))
             .validate200ResponseCodeSmoke(Cypress.env("plush_bez_limitu_abonament_listing_UAT"), { timeout: 30000 })
           
