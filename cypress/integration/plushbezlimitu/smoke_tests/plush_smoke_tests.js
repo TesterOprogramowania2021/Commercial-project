@@ -1,14 +1,14 @@
 /// <reference  types="Cypress" />
 
 // import { before } from "cypress/types/lodash";
-import Plush_main_page from "../../../support/plush/Plush_main_page_1"
-import Plush_phones_pages from "../../../support/plush/Plush_phones_page_2"
-import Plush_phone_page from "../../../support/plush/Plush_phone_page_3";
-import Plush_person_formulage_page from "../../../support/plush/Plush_person_formulage_page_4";
-import Plush_adress_formulage_page from "../../../support/plush/Plush_adress_formulage_page_5";
-import Plush_step3_page from "../../../support/plush/Plush_step3_page_6";
-import Plush_finished_page from "../../../support/plush/Plush_finished_page_7";
-import Plush_contract_page from "../../../support/plush/Plush_make_contract_page_8";
+import Plush_main_page from "../../../support/plush/smoke-objects/Plush_main_page_1"
+import Plush_phones_pages from "../../../support/plush/smoke-objects/Plush_phones_page_2"
+import Plush_phone_page from "../../../support/plush/smoke-objects/Plush_phone_page_3";
+import Plush_person_formulage_page from "../../../support/plush/smoke-objects/Plush_person_formulage_page_4";
+import Plush_adress_formulage_page from "../../../support/plush/smoke-objects/Plush_adress_formulage_page_5";
+import Plush_step3_page from "../../../support/plush/smoke-objects/Plush_step3_page_6";
+import Plush_finished_page from "../../../support/plush/smoke-objects/Plush_finished_page_7";
+import Plush_contract_page from "../../../support/plush/smoke-objects/Plush_make_contract_page_8";
 
 
 describe("Plush E2E smoke tests", () => {

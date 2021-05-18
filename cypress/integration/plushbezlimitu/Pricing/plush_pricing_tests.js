@@ -1,6 +1,6 @@
 /// <reference  types="Cypress" />
 
-import Plush_pricing_list_page from "../../../support/plush/Plush_pricing_list_page_9.js";
+import Plush_pricing_list_page from "../../../support/plush/pricing-objects/Plush_pricing_list_page_9";
 
 
 

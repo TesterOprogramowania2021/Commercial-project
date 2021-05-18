@@ -13,7 +13,7 @@ const personFormulagePageSelectors = {
     otpNumberSelector: "#otp-number",
     otpSubmitButton: "#otp-number-form-submit",
     rightZonePrice: ".with-device > .shadow--bottom > .offer",
-    priceLine: ".offer-excerpt",
+    priceLine: ".offer-excerpt", 
     passwordInput: "#otp-pass",
     buttonSend: "#otp-pass-form-submit",
     webOberatorDropDown: ":nth-child(3) > :nth-child(1) > .select-container > .selected-option",
@@ -21,7 +21,7 @@ const personFormulagePageSelectors = {
     selectService : ".select-container > .selected-option",
     forFinishedTime: "na koniec okresu wypowiedzenia",
     priceFormulagePerson: ".amount",
-    poUPoperator: "[style=\"\"] > .select-container > .selected-option"
+    poUPoperator: "[style=\"\"] > .select-container > .selected-option" 
 
    
 
@@ -64,8 +64,8 @@ class Plush_person_formulage_page {
     }
     verifyPriceOnFormulage(textPrice){
         cy
-            .get(personFormulagePageSelectors.rightZonePrice)
-            .find(personFormulagePageSelectors.priceLine)
+            
+            .get(personFormulagePageSelectors.priceLine,{timeout:30000})
             .contains(textPrice)
     }
     setAndAcceptPassword(password){
