@@ -19,7 +19,7 @@ class Plush_main_page {
     //metoda otwierająca główną stronę Plush
     getPlushMainPage() {
         cy
-            .reload({ timeout: 5000 })
+            // .reload({ timeout: 5000 })
             .visit(Cypress.env("plush_bez_limitu"))
             .validate200ResponseCodeSmoke(Cypress.env("plush_bez_limitu"), { timeout: 30000 })
             // .verifyURLadress(Cypress.env("plush_bez_limitu"))

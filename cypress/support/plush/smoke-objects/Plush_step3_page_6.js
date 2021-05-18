@@ -27,6 +27,7 @@ class Plush_step3_page {
             .should("not.be.checked")
             .check({ force: true })
             .should("be.checked");
+        
     }
 
     clickAcceptButton() {

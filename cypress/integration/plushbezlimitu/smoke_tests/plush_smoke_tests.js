@@ -54,6 +54,7 @@ describe("Plush E2E smoke tests", () => {
         plush_person_formulage_page.fillFormulage(data.userDataFormulage[0],data.userDataFormulage[1],data.userDataFormulage[2],data.userDataFormulage[3],data.userDataFormulage[4],data.userDataFormulage[5],data.step1URL,data.prices[0])
         plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2],data.adressDataFormulage[3],data.adressDataFormulage[4]);
         plush_adress_formulage_page.selectDocument(data.documentName[0])
+        plush_adress_formulage_page.clickButtonNext()
         plush_step3_page.checkedMainPrice(data.prices[0], data.step3URL);
         plush_step3_page.clickcheckboxAllAccepts()
         plush_step3_page.clickAcceptButton();
@@ -68,6 +69,7 @@ describe("Plush E2E smoke tests", () => {
         plush_person_formulage_page.fillFormulage(data.userDataFormulage[0],data.userDataFormulage[1],data.userDataFormulage[2],data.userDataFormulage[3],data.userDataFormulage[4],data.userDataFormulage[5],data.step1URL)
         plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2],data.adressDataFormulage[3],data.adressDataFormulage[4]);
         plush_adress_formulage_page.clickButtonNext();
+        plush_step3_page.checkedMainPrice(data.prices[0], data.step3URL);
         plush_step3_page.clickcheckboxAllAccepts()
         plush_step3_page.clickAcceptButton();
         plush_step3_page.acceptPopUp(data.popUpAcceptDataNoDevice)
@@ -91,6 +93,8 @@ describe("Plush E2E smoke tests", () => {
         plush_person_formulage_page.fillFormulage(data.userDataFormulage[0],data.userDataFormulage[1],data.userDataFormulage[2],data.userDataFormulage[3],data.userDataFormulage[4],data.userDataFormulage[5],data.step1URL)
         plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2],data.adressDataFormulage[3],data.adressDataFormulage[4]);
         plush_adress_formulage_page.selectDocument(data.documentName[0])
+        plush_adress_formulage_page.clickButtonNext()
+        plush_step3_page.checkedMainPrice(data.prices[0], data.step3URL);
         plush_step3_page.clickcheckboxAllAccepts()
         plush_step3_page.clickAcceptButton();
         plush_step3_page.acceptPopUp(data.popUpAcceptData)
@@ -111,6 +115,7 @@ describe("Plush E2E smoke tests", () => {
         plush_person_formulage_page.fillFormulage(data.userDataFormulage[0],data.userDataFormulage[1],data.userDataFormulage[2],data.userDataFormulage[3],data.userDataFormulage[4],data.userDataFormulage[5],data.step1URL)
         plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2],data.adressDataFormulage[3],data.adressDataFormulage[4]);
         plush_adress_formulage_page.clickButtonNext();
+        plush_step3_page.checkedMainPrice(data.prices[0], data.step3URL);
         plush_step3_page.clickcheckboxAllAccepts()
         plush_step3_page.clickAcceptButton();
         plush_step3_page.acceptPopUp(data.popUpAcceptDataNoDevice)
@@ -131,6 +136,8 @@ describe("Plush E2E smoke tests", () => {
         plush_person_formulage_page.fillFormulage(data.userDataFormulage[0],data.userDataFormulage[1],data.userDataFormulage[2],data.userDataFormulage[3],data.userDataFormulage[4],data.userDataFormulage[5],data.step1URL)   
         plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2],data.adressDataFormulage[3],data.adressDataFormulage[4]);
         plush_adress_formulage_page.selectDocument(data.documentName[0])
+        plush_adress_formulage_page.clickButtonNext()
+        plush_step3_page.checkedMainPrice(data.prices[0], data.step3URL);
         plush_step3_page.clickcheckboxAllAccepts()
         plush_step3_page.clickAcceptButton();
         plush_step3_page.acceptPopUp(data.popUpAcceptData)
@@ -148,6 +155,7 @@ describe("Plush E2E smoke tests", () => {
         plush_person_formulage_page.fillFormulage(data.userDataFormulage[0],data.userDataFormulage[1],data.userDataFormulage[2],data.userDataFormulage[3],data.userDataFormulage[4],data.userDataFormulage[5],data.step1URL)   
         plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2],data.adressDataFormulage[3],data.adressDataFormulage[4]);
         plush_adress_formulage_page.clickButtonNext();
+        plush_step3_page.checkedMainPrice(data.prices[0], data.step3URL);
         plush_step3_page.clickcheckboxAllAccepts()
         plush_step3_page.clickAcceptButton();
         plush_step3_page.acceptPopUp(data.popUpAcceptDataNoDeviceMIG)

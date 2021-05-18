@@ -37,6 +37,13 @@ class Plush_listing_subscription {
             .contains(setOffer)
             .click({force:true})
     }
+    getOffer60zlForAllTime(setOffer){
+        cy
+            .get(listingPageSelectors.mainOffers)
+            .eq(2)
+            .contains(setOffer)
+            .click({force:true})
+    }
  
 
 

@@ -47,10 +47,18 @@ class Plush_phones_pages {
             .to.have.css("background");
         })
     }
-    checkedRadiobutton30zlSelection(pricePearMonth) {
+    checkedRadiobutton30zlSelection() {
         cy
             .get(phonesPageSelectors.offerSelection, {timeout:10000})
             .contains(data.radioButton30zl)
+            .find(phonesPageSelectors.radiobutton)
+            .should("be.checked")
+            
+    }
+    checkedRadiobutton60zlSelection() {
+        cy
+            .get(phonesPageSelectors.offerSelection, {timeout:10000})
+            .contains(data.radioButton60zl)
             .find(phonesPageSelectors.radiobutton)
             .should("be.checked")
             

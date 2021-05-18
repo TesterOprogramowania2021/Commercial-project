@@ -10,6 +10,9 @@ const adressFormulagePageSelectors = {
     selectConteiner: ".select-options",
     dropDown: "div[class='selected-option']",
     buttonNext: "#basket-go-to-step-3",
+    employer: "#EMPLOYER",
+    phoneEmployer: "#EMPLOYER_PHONE",
+    moneySource: "#OCCUPATION > .select-container > .selected-option"
 
 
 
@@ -31,8 +34,13 @@ class Plush_adress_formulage_page {
     }
     selectDocument(documentName) {
         cy.get(adressFormulagePageSelectors.dropDown).click({ force: true })
-        cy.get(adressFormulagePageSelectors.selectConteiner).contains(data.documentName[0]).click({ force: true })
-        cy.get(adressFormulagePageSelectors.buttonNext).click();
+        cy.get(adressFormulagePageSelectors.selectConteiner).contains(documentName).click({ force: true })
+    }
+    fillDocumentFormulage(employerText, emplpyerPhoneText, persoWhoImproveYourMoneySourceText){
+        cy.get(adressFormulagePageSelectors.employer).type(employerText,{force: true})
+        cy.get(adressFormulagePageSelectors.phoneEmployer).type(emplpyerPhoneText,{force: true})
+        cy.get(adressFormulagePageSelectors.moneySource).click({force:true})
+        cy.contains(persoWhoImproveYourMoneySourceText).click({force:true})
     }
     clickButtonNext() {
         cy.get(adressFormulagePageSelectors.buttonNext).click();

@@ -4,6 +4,7 @@
     "textNoPhone": "KUP BEZ TELEFONU",
     "textNewNumber": "Nowy numer",
     "radioButton30zl": "30 zł/mies.",
+    "radioButton60zl": "60 zł/mies.",
     "urlNewPhones": "/telefony/nowy-numer",
     "iWontNewNumber": "Chcę nowy numer",
     "iWontMoveNumber": "Chcę przenieść numer",
@@ -44,10 +45,12 @@
         "Testowa"
     ],
     "documentName": [
-        "Legitymacja emeryta/rencisty"
+        "Legitymacja emeryta/rencisty",
+        "Zaświadczenie o zatrudnieniu"
     ],
     "prices": [
-        "30 zł"
+        "30 zł",
+        "60 zł"
     ],
     "webOperators": [
         "PLAY – P4 Sp. z o.o.",
@@ -55,6 +58,10 @@
     ],
     "services": [
         "Abonament"
+    ],
+    "improveDocumentPerson":
+    [
+        "Księgowość"
     ]
   
  
