@@ -104,7 +104,7 @@ describe("Plush E2E smoke tests", () => {
 
         
     })
-    it.only("Placing an order for MNP in the offer of 30 PLN / month with no device", () => {
+    it("Placing an order for MNP in the offer of 30 PLN / month with no device", () => {
         plush_main_page.clickOffertFirstRow(data.textNoPhone);
         plush_main_page.clickOptionWhatYouNeed(data.iwontNewNumberInPlush);
         plush_person_formulage_page.setOTPNumber(data.otpNumber)
@@ -165,12 +165,12 @@ describe("Plush E2E smoke tests", () => {
    
     })
 
-    // it.only("Placing an order for RET in the offer for 30 PLN / month with the device.", () => {
-    //     plush_main_page.clickOffertFirstRow(data.textGetPhone);
-    //     plush_phones_pages.clickButtonMakeContract(data.makeContractText);
-    //     plush_contract_page.typePhoneNumber(data.mixPlusNumberRET, data.writePhoneNumberText)
-    //     plush_contract_page.typeAndAcceptPassword(data.uatPassword);
-    // })
+    it.only("Placing an order for RET in the offer for 30 PLN / month with the device.", () => {
+        plush_main_page.clickOffertFirstRow(data.textGetPhone);
+        plush_phones_pages.clickButtonMakeContract(data.makeContractText);
+        plush_contract_page.typePhoneNumber(data.mixPlusNumberRET, data.writePhoneNumberText)
+        plush_contract_page.typeAndAcceptPassword(data.uatPassword);
+    })
 
 
 

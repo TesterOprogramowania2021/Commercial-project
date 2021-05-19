@@ -27,6 +27,7 @@ class Plush_listing_subscription {
     getOffer30zlFor24month(setOffer){
         cy
             .get(listingPageSelectors.mainOffers)
+            .eq(1)
             .contains(setOffer)
             .click({force:true})
     }

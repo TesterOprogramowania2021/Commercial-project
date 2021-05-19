@@ -30,6 +30,7 @@
     "popUpAcceptDataNoDevice": "Aby otrzymać zamówienie, musisz podpisać umowę online. Na adres e-mail podany w zamówieniu wyślemy umowę wraz z linkiem do jej potwierdzenia. Link jest ważny przez 7 dni. Po tym czasie zamówienie zostanie anulowane. Hasło do dokumentów wysłanych w e-mailu to Twój numer [PESEL/NIP] w zależności od tego czy jesteś klientem indywidualnym czy biznesowym. ",
     "popUpAcceptDataNoDeviceMIG": "Na adres e-mail podany w zamówieniu wyślemy umowę wraz z linkiem do jej potwierdzenia. Link jest ważny przez 7 dni. Po tym czasie zamówienie zostanie anulowane. Hasło do dokumentów wysłanych w e-mailu to Twój numer [PESEL/NIP] w zależności od tego czy jesteś klientem indywidualnym czy biznesowym. ",
     "cardDataTransfer": "Proces przeniesienia numeru rozpocznie się od dnia dostarczenia do Polkomtel sp. z o.o. podpisanych przez Państwa dokumentów: wniosku o przeniesienie numeru oraz pełnomocnictwa udzielonego Polkomtel sp. z o.o. w tej sprawie (dokumenty te zostaną Państwu doręczone przez kuriera w ramach realizacji Zamówienia; w treści wniosku zostanie oznaczona data przeniesienia numeru, która będzie nie dłuższa niż 14 dni od momentu doręczenia Państwu powyższego dokumentu). Do przeniesienia numeru konieczne jest, aby karta była zarejestrowana u aktualnego operatora.",
+    "lastOffertTime": "Wybierz tę opcję, jeśli masz umowę na czas nieokreślony, kiedy nie obowiązuje Cię już promocja.",
     "latPromotionTime": "Wybierz tę opcję, jeśli masz umowę na czas określony i chcesz przenieść numer dopiero po jej zakończeniu. Przenieść numer można nie wcześniej niż na 120 dni przed końcem umowy u obecnego operatora.",
     "userDataFormulage": [
         "test",
@@ -58,7 +59,9 @@
         "PLAY – P4 Sp. z o.o.",
         "Orange – Orange Polska S.A",
         "T-Mobile – T-Mobile Polska S.A.",
-        "Klucz Telekomunikacja Sp. z o. o."
+        "Klucz Telekomunikacja Sp. z o. o.",
+        "Netia S.A.",
+        "UPC Polska Sp. z o.o."
     ],
     "services": [
         "Abonament",

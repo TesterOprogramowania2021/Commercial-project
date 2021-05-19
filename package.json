@@ -8,7 +8,9 @@
     "run-all-tests-dashboard": "npx cypress run --record --key 3d4f1f20-188d-404a-89a7-d625fed6aada",
     "run-all-tests-headed": "npx cypress run --headed",
     "run-all-tests-chrome": "npx cypress run --browser chrome",
-    "run-all-pricingList-dashboard": "npx cypress run --record --key 3d4f1f20-188d-404a-89a7-d625fed6aada --spec  cypress/integration/plushbezlimitu/Pricing/plush_pricing_tests.js"
+    "run-all-pricingList-dashboard": "npx cypress run --record --key 3d4f1f20-188d-404a-89a7-d625fed6aada --spec  cypress/integration/plushbezlimitu/Pricing/plush_pricing_tests.js",
+    "run-first-e2e": "npx cypress run --spec cypress/integration/plushbezlimitu/plush_e2e_tests.js/plush_e2e_tests_1.js",
+    "run-all-pricingList": "npx cypress run --spec cypress/integration/plushbezlimitu/Pricing/plush_pricing_tests.js"
   },
   "author": "inż.Szymon Wasiak",
   "license": "ISC",

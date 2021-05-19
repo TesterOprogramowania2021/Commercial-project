@@ -24,7 +24,7 @@ class Plush_step3_page {
     }
     clickcheckboxAllAccepts() {
         cy
-            .get(step3PageSelectors.checkboxAllAccepts)
+            .get(step3PageSelectors.checkboxAllAccepts, {timeout:10000})
             .should("not.be.checked")
             .check({ force: true })
             .should("be.checked");
@@ -33,15 +33,20 @@ class Plush_step3_page {
 
     clickAcceptButton() {
         cy
-            .get(step3PageSelectors.acceptOrderButton)
+            .get(step3PageSelectors.acceptOrderButton, {timeout:10000})
             .scrollIntoView()
-            .click({ force: true })
+            .wait(1500)
+        cy
+            .get(step3PageSelectors.acceptOrderButton, {timeout:10000})
+            .click({force:true})
     }
     clickConfirmButton() {
         cy
             .get(step3PageSelectors.buttonConfirm, { timeout: 20000 })
             .scrollIntoView()
             .click({ force: true })
+        
+            
     }
     acceptPopUp(popUptext){
         cy.get(step3PageSelectors.popUpText, {timeout:20000}).should("have.text",popUptext, {timeout: 15000})

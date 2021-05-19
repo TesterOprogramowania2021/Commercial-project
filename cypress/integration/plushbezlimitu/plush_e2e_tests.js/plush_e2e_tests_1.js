@@ -160,7 +160,7 @@ describe("First part of E2E plush tests", () =>{
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL)
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
     })
-    it.only("Placing an order for an MNP in the offer for 30 PLN /month without device",()=>{
+    it("Placing an order for an MNP in the offer for 30 PLN /month without device",()=>{
         plush_listing_subscription.getOffer30zlFor24month(data.textNoPhone)
         plush_main_page.clickOptionWhatYouNeed(data.iwontNewNumberInPlush)
         plush_person_formulage_page.setOTPNumber(data.otpNumber)
@@ -182,4 +182,47 @@ describe("First part of E2E plush tests", () =>{
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
      
     })
+    it("Placing an order for an MNP in the offer for 30 PLN /month without device",()=>{
+        plush_listing_subscription.getOffer30zlFor24month(data.textNoPhone)
+        plush_main_page.clickOptionWhatYouNeed(data.iwontNewNumberInPlush)
+        plush_person_formulage_page.setOTPNumber(data.otpNumber)
+        plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
+        plush_person_formulage_page.setAndAcceptPassword(data.uatPassword)
+        plush_person_formulage_page.setPopUPWebOperator(data.webOperators[4])
+        plush_person_formulage_page.setPopUPWebOperatorService(data.services[0])
+        plush_person_formulage_page.setNumberDateTransfer()
+        plush_person_formulage_page.fillFormulage(data.userDataFormulage[0],data.userDataFormulage[1],data.userDataFormulage[2],data.userDataFormulage[3],data.userDataFormulage[4],data.userDataFormulage[5],data.step1URL)
+        plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2],data.adressDataFormulage[3],data.adressDataFormulage[4])
+        plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
+        plush_adress_formulage_page.clickButtonNext()
+        plush_step3_page.checkedMainPrice(data.prices[0], data.step3URL)
+        plush_step3_page.clickcheckboxAllAccepts()
+        plush_step3_page.clickAcceptButton()
+        plush_step3_page.acceptPopUp(data.popUpAcceptDataNoDevice)
+        plush_step3_page.clickConfirmButton()
+        plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL)
+        plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
+    })
+    it.only("Placing an order for MNP in the offer for 60 PLN /month without a device",()=>{
+        plush_listing_subscription.getOffer60zlForAllTime(data.textNoPhone)  
+        plush_main_page.clickOptionWhatYouNeed(data.iwontNewNumberInPlush)  
+        plush_person_formulage_page.setOTPNumber(data.otpNumber)
+        plush_person_formulage_page.verifyPriceOnFormulage(data.prices[1])
+        plush_person_formulage_page.setAndAcceptPassword(data.uatPassword)
+        plush_person_formulage_page.setPopUPWebOperator(data.webOperators[5])
+        plush_person_formulage_page.setPopUPWebOperatorService(data.services[1]);
+        plush_person_formulage_page.setNumberDateTransfer2(data.cardDataTransfer);
+        plush_person_formulage_page.fillFormulage(data.userDataFormulage[0],data.userDataFormulage[1],data.userDataFormulage[2],data.userDataFormulage[3],data.userDataFormulage[4],data.userDataFormulage[5],data.step1URL)
+        plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2],data.adressDataFormulage[3],data.adressDataFormulage[4]);
+        plush_person_formulage_page.verifyPriceOnFormulage(data.prices[1])
+        plush_adress_formulage_page.setForOfDocumentType(1)
+        plush_adress_formulage_page.clickButtonNext()
+        plush_step3_page.checkedMainPrice(data.prices[1], data.step3URL)
+        plush_step3_page.clickcheckboxAllAccepts()
+        plush_step3_page.clickAcceptButton()
+        plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL)
+        plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
+
+    })
+    
 })
