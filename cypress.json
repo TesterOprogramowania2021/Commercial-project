@@ -16,7 +16,8 @@
         "plush_bez_limitu_produkcja": "https://www.plushbezlimitu.pl/",
         "plush_bez_limitu_cenniki_UAT": "https://uat.plushbezlimitu.pl/regulaminy",
         "plush_bez_limitu_cenniki_produkcja": "https://www.plushbezlimitu.pl/regulaminy",
-        "plush_bez_limitu_abonament_listing_UAT": "https://uat.plushbezlimitu.pl/abo/lista-ofert" 
+        "plush_bez_limitu_abonament_listing_UAT": "https://uat.plushbezlimitu.pl/abo/lista-ofert",
+        "plush_bez_limitu_abonament_listing_produkcja": "https://www.plushbezlimitu.pl/abo/lista-ofert"  
 
     }
 }

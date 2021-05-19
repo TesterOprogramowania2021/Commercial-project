@@ -96,10 +96,12 @@ class Plush_person_formulage_page {
         cy
             .contains(personFormulagePageSelectors.forFinishedTime).click({force: true})
     }
-    setNumberDateTransfer2(){
+    setNumberDateTransfer2(cardText){
         cy
             .get(personFormulagePageSelectors.setFinishedTransferForCard).click({force: true})
+            .get(personFormulagePageSelectors.setFinishedTransferForCard).contains(cardText)
     }
+   
    
   
   

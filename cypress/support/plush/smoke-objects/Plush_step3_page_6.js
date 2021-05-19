@@ -8,7 +8,8 @@ const step3PageSelectors = {
     checkboxAllAccepts: "input[type='checkbox']",
     acceptOrderButton: "#basket-go-to-thank-you",
     buttonConfirm: "#confirm",
-    popUpText: ".modal-content > .box-info > .box > .message > p"
+    popUpText: ".modal-content > .box-info > .box > .message > p",
+    onDeliveryPayments:"Gotówką przy odbiorze"
 }
 
 class Plush_step3_page {
@@ -45,6 +46,9 @@ class Plush_step3_page {
     acceptPopUp(popUptext){
         cy.get(step3PageSelectors.popUpText, {timeout:20000}).should("have.text",popUptext, {timeout: 15000})
 
+    }
+    clickOnDeliveryPayments(){
+        cy.contains(step3PageSelectors.onDeliveryPayments).click({force:true})
     }
 
 }
