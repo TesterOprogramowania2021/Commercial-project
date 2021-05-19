@@ -62,6 +62,7 @@ class Plush_person_formulage_page {
             .type(otpPhoneNumber,{force:true})
             .get(personFormulagePageSelectors.otpSubmitButton)
             .click({force: true})
+            
        
     }
     verifyPriceOnFormulage(textPrice){
