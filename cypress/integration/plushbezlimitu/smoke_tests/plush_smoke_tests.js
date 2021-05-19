@@ -104,7 +104,7 @@ describe("Plush E2E smoke tests", () => {
 
         
     })
-    it("Placing an order for MNP in the offer of 30 PLN / month with no device", () => {
+    it.only("Placing an order for MNP in the offer of 30 PLN / month with no device", () => {
         plush_main_page.clickOffertFirstRow(data.textNoPhone);
         plush_main_page.clickOptionWhatYouNeed(data.iwontNewNumberInPlush);
         plush_person_formulage_page.setOTPNumber(data.otpNumber)

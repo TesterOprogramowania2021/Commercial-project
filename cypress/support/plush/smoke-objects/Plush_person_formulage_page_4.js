@@ -22,7 +22,8 @@ const personFormulagePageSelectors = {
     forFinishedTime: "na koniec okresu wypowiedzenia",
     priceFormulagePerson: ".amount",
     poUPoperator: "[style=\"\"] > .select-container > .selected-option" ,
-    setFinishedTransferForCard: ".otp-valid-message > :nth-child(3) > .input-radio > label"
+    setFinishedTransferForCard: ".otp-valid-message > :nth-child(3) > .input-radio > label",
+    lastPromotionTime: ".otp-valid-message > :nth-child(3) > .input-radio > :nth-child(3) > span"
 
    
 
@@ -100,6 +101,11 @@ class Plush_person_formulage_page {
         cy
             .get(personFormulagePageSelectors.setFinishedTransferForCard).click({force: true})
             .get(personFormulagePageSelectors.setFinishedTransferForCard).contains(cardText)
+    }
+    setNumberDateTransfer3(lastPromotionText){
+        cy
+            .get(personFormulagePageSelectors.lastPromotionTime).click({force: true})
+            .get(personFormulagePageSelectors.lastPromotionTime).contains(lastPromotionText)
     }
    
    
