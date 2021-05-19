@@ -224,7 +224,7 @@ describe("First part of E2E plush tests", () =>{
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
 
     })
-    it.only("Placing an order for MIG in the offer of 30 PLN /month with the device",()=>{
+    it("Placing an order for MIG in the offer of 30 PLN /month with the device",()=>{
         plush_listing_subscription.getOffer30zlFor24month(data.textGetPhone)
         plush_phones_pages.clickButtonWontAbo()
         plush_phones_pages.checkedRadiobutton30zlSelection(data.radioButton30zl); 
