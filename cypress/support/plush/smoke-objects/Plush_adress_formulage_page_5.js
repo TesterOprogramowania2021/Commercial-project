@@ -13,8 +13,10 @@ const adressFormulagePageSelectors = {
     employer: "#EMPLOYER",
     phoneEmployer: "#EMPLOYER_PHONE",
     moneySource: "#OCCUPATION > .select-container > .selected-option",
-    documentForm: "[class='input-radio column required valid form-of-concluding-type'] >label"
-
+    documentForm: "[class='input-radio column required valid form-of-concluding-type'] >label",
+    documentEmployer2: "input[name='EMPLOYER']",
+    documentEmployerPhone2: "input[name='EMPLOYER_PHONE']",
+    selectFV: "#INVOICE_TYPE > div > div"
 
 
 
@@ -43,12 +45,20 @@ class Plush_adress_formulage_page {
         cy.get(adressFormulagePageSelectors.moneySource).click({force:true})
         cy.contains(persoWhoImproveYourMoneySourceText).click({force:true})
     }
+    fillDocumentFormulageContractOrder(employerText, emplpyerPhoneText){
+        cy.get(adressFormulagePageSelectors.documentEmployer2).type(employerText,{force: true})
+        cy.get(adressFormulagePageSelectors.documentEmployerPhone2).type(emplpyerPhoneText,{force: true})
+    }
     clickButtonNext() {
         cy.get(adressFormulagePageSelectors.buttonNext).click();
 
     }
     setForOfDocumentType(index){
         cy.get(adressFormulagePageSelectors.documentForm).eq(index).click({force: true});
+    }
+    setTypeOfFv(fvText){
+        cy.get(adressFormulagePageSelectors.selectFV).click({force:true})
+        cy.contains(fvText).click({force:true})
     }
 
 

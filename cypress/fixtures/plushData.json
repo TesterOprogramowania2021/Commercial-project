@@ -25,6 +25,7 @@
     "mixPlusNumber": "600428633",
     "mixPlusNumberRET": "506938542",
     "uatPassword": "1111",
+    "fvTV": "Opłacona faktura za telewizję",
     "pathToOrderNumbersFile": "cypress/fixtures/orderNumbers.txt",
     "popUpAcceptData": "Aby otrzymać zamówienie, musisz podpisać umowę online. Na adres e-mail podany w zamówieniu wyślemy umowę wraz z linkiem do jej potwierdzenia. Link jest ważny przez 4 dni. Po tym czasie zamówienie zostanie anulowane. Hasło do dokumentów wysłanych w e-mailu to Twój numer [PESEL/NIP] w zależności od tego czy jesteś klientem indywidualnym czy biznesowym. ",
     "popUpAcceptDataNoDevice": "Aby otrzymać zamówienie, musisz podpisać umowę online. Na adres e-mail podany w zamówieniu wyślemy umowę wraz z linkiem do jej potwierdzenia. Link jest ważny przez 7 dni. Po tym czasie zamówienie zostanie anulowane. Hasło do dokumentów wysłanych w e-mailu to Twój numer [PESEL/NIP] w zależności od tego czy jesteś klientem indywidualnym czy biznesowym. ",
@@ -33,7 +34,7 @@
     "lastOffertTime": "Wybierz tę opcję, jeśli masz umowę na czas nieokreślony, kiedy nie obowiązuje Cię już promocja.",
     "latPromotionTime": "Wybierz tę opcję, jeśli masz umowę na czas określony i chcesz przenieść numer dopiero po jej zakończeniu. Przenieść numer można nie wcześniej niż na 120 dni przed końcem umowy u obecnego operatora.",
     "userDataFormulage": [
-        "test",
+        "testName",
         "testSurname",
         "test111@gmail.com",
         "123123123",
@@ -41,15 +42,17 @@
         "AVH686152"
     ],
     "adressDataFormulage": [
-        "Lipowa",
+        "testStreat",
         "12",
         "1",
         "12-159",
-        "Testowa"
+        "testCity"
     ],
     "documentName": [
         "Legitymacja emeryta/rencisty",
-        "Zaświadczenie o zatrudnieniu"
+        "Zaświadczenie o zatrudnieniu",
+        "Umowa zlecenie",
+        "Faktura (np. za telefon, prąd)"
     ],
     "prices": [
         "30 zł",
@@ -61,7 +64,8 @@
         "T-Mobile – T-Mobile Polska S.A.",
         "Klucz Telekomunikacja Sp. z o. o.",
         "Netia S.A.",
-        "UPC Polska Sp. z o.o."
+        "UPC Polska Sp. z o.o.",
+        "Telefonia Dialog Sp. z o.o."
     ],
     "services": [
         "Abonament",

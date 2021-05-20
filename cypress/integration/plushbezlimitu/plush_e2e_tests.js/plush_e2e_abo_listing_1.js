@@ -32,7 +32,7 @@ describe("First part of E2E plush tests abonament listing page", () =>{
         
         plush_main_page.clearCookies()
         plush_listing_subscription.getPlushListingPage(data.urlAdress);
-        plush_main_page.acceptRodo() 
+        plush_listing_subscription.acceptRodo() 
 
         Cypress.on('uncaught:exception', (err, runnable) => {
             return false;
@@ -41,7 +41,7 @@ describe("First part of E2E plush tests abonament listing page", () =>{
           
     })
 
-    it("Placing an order for ACQ in the offer of 30 PLN / month with the device",()=>{
+    it("Voice/ACQ/Device/Ind/Abo/24months",()=>{
         plush_listing_subscription.getOffer30zlFor24month(data.textGetPhone)
         plush_phones_pages.clickButtonNewNumber2()
         plush_phones_pages.checkedRadiobutton30zlSelection(data.radioButton30zl); 
@@ -52,31 +52,31 @@ describe("First part of E2E plush tests abonament listing page", () =>{
         plush_person_formulage_page.fillFormulage(data.userDataFormulage[0],data.userDataFormulage[1],data.userDataFormulage[2],data.userDataFormulage[3],data.userDataFormulage[4],data.userDataFormulage[5],data.step1URL,data.prices[0])
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
         plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2],data.adressDataFormulage[3],data.adressDataFormulage[4]);
-        plush_adress_formulage_page.selectDocument(data.documentName[0])
+        plush_adress_formulage_page.selectDocument(data.documentName[3])
+        plush_adress_formulage_page.setForOfDocumentType(1)
+        plush_adress_formulage_page.setTypeOfFv(data.fvTV)
         plush_adress_formulage_page.clickButtonNext()
         plush_step3_page.checkedMainPrice(data.prices[0], data.step3URL);
         plush_step3_page.clickcheckboxAllAccepts()
+        plush_step3_page.clickOnDeliveryPayments()
         plush_step3_page.clickAcceptButton();
-        plush_step3_page.acceptPopUp(data.popUpAcceptData)
-        plush_step3_page.clickConfirmButton();
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL);
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
         
     })
    
-    it("Placing an order for ACQ in the offer for 30 PLN / month without no device",()=>{
+    it.only("Voice/ACQ/Simo/Ind/Abo/24months",()=>{
         plush_listing_subscription.getOffer30zlFor24month(data.textNoPhone)
         plush_main_page.clickOptionWhatYouNeed(data.textNewNumber);
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
         plush_person_formulage_page.fillFormulage(data.userDataFormulage[0],data.userDataFormulage[1],data.userDataFormulage[2],data.userDataFormulage[3],data.userDataFormulage[4],data.userDataFormulage[5],data.step1URL)
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
         plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2],data.adressDataFormulage[3],data.adressDataFormulage[4]);
+        plush_adress_formulage_page.setForOfDocumentType(1)
         plush_adress_formulage_page.clickButtonNext();
         plush_step3_page.checkedMainPrice(data.prices[0], data.step3URL);
         plush_step3_page.clickcheckboxAllAccepts()
         plush_step3_page.clickAcceptButton();
-        plush_step3_page.acceptPopUp(data.popUpAcceptDataNoDevice)
-        plush_step3_page.clickConfirmButton();
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL);
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
 
@@ -225,7 +225,7 @@ describe("First part of E2E plush tests abonament listing page", () =>{
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
 
     })
-    it("Placing an order for MIG in the offer of 30 PLN /month with the device",()=>{
+    it("Voice/Abo/MNP/device/indefinite",()=>{
         plush_listing_subscription.getOffer30zlFor24month(data.textGetPhone)
         plush_phones_pages.clickButtonWontAbo()
         plush_phones_pages.checkedRadiobutton30zlSelection(data.radioButton30zl); 
