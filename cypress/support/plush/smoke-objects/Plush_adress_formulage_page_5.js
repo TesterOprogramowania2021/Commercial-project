@@ -18,10 +18,6 @@ const adressFormulagePageSelectors = {
     documentEmployerPhone2: "input[name='EMPLOYER_PHONE']",
     selectFV: "#INVOICE_TYPE > div > div"
 
-
-
-
-
 }
 
 class Plush_adress_formulage_page {
@@ -39,26 +35,26 @@ class Plush_adress_formulage_page {
         cy.get(adressFormulagePageSelectors.dropDown).click({ force: true })
         cy.get(adressFormulagePageSelectors.selectConteiner).contains(documentName).click({ force: true })
     }
-    fillDocumentFormulage(employerText, emplpyerPhoneText, persoWhoImproveYourMoneySourceText){
-        cy.get(adressFormulagePageSelectors.employer).type(employerText,{force: true})
-        cy.get(adressFormulagePageSelectors.phoneEmployer).type(emplpyerPhoneText,{force: true})
-        cy.get(adressFormulagePageSelectors.moneySource).click({force:true})
-        cy.contains(persoWhoImproveYourMoneySourceText).click({force:true})
+    fillDocumentFormulage(employerText, emplpyerPhoneText, persoWhoImproveYourMoneySourceText) {
+        cy.get(adressFormulagePageSelectors.employer).type(employerText, { force: true })
+        cy.get(adressFormulagePageSelectors.phoneEmployer).type(emplpyerPhoneText, { force: true })
+        cy.get(adressFormulagePageSelectors.moneySource).click({ force: true })
+        cy.contains(persoWhoImproveYourMoneySourceText).click({ force: true })
     }
-    fillDocumentFormulageContractOrder(employerText, emplpyerPhoneText){
-        cy.get(adressFormulagePageSelectors.documentEmployer2).type(employerText,{force: true})
-        cy.get(adressFormulagePageSelectors.documentEmployerPhone2).type(emplpyerPhoneText,{force: true})
+    fillDocumentFormulageContractOrder(employerText, emplpyerPhoneText) {
+        cy.get(adressFormulagePageSelectors.documentEmployer2).type(employerText, { force: true })
+        cy.get(adressFormulagePageSelectors.documentEmployerPhone2).type(emplpyerPhoneText, { force: true })
     }
     clickButtonNext() {
         cy.get(adressFormulagePageSelectors.buttonNext).click();
 
     }
-    setForOfDocumentType(index){
-        cy.get(adressFormulagePageSelectors.documentForm).eq(index).click({force: true});
+    setForOfDocumentType(index) {
+        cy.get(adressFormulagePageSelectors.documentForm).eq(index).click({ force: true });
     }
-    setTypeOfFv(fvText){
-        cy.get(adressFormulagePageSelectors.selectFV).click({force:true})
-        cy.contains(fvText).click({force:true})
+    setTypeOfFv(fvText) {
+        cy.get(adressFormulagePageSelectors.selectFV).click({ force: true })
+        cy.contains(fvText).click({ force: true })
     }
 
 

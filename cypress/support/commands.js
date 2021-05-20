@@ -26,34 +26,34 @@
 
 
 //Jak sama nazwa metody wskazuje, metoda czyści pliki cookies oraz akceptuje regulamin RODO
-Cypress.Commands.add("clearCookiesAndLocalStages",()=>{
+Cypress.Commands.add("clearCookiesAndLocalStages", () => {
     cy.clearCookies()
     cy.clearLocalStorage();
 })
 
 
-Cypress.Commands.add("acceptRodo",button=>{
+Cypress.Commands.add("acceptRodo", button => {
     cy.get(button).click();
 })
 
 
-Cypress.Commands.add("verifyURLadress",urlPath=>{
-    cy.url().should("contain",urlPath,{timeout: 20000})
-  })
-
-
-Cypress.Commands.add("validate200ResponseCode",(url)=>{
-    let result;
-    result = cy.request("https://api.plushbezlimitu.pl/jcr/files/file/adp/files/"+url)
-    result.its("status").should("equal",200)
-   
+Cypress.Commands.add("verifyURLadress", urlPath => {
+    cy.url().should("contain", urlPath, { timeout: 20000 })
 })
 
-Cypress.Commands.add("validate200ResponseCodeSmoke",(url)=>{
+
+Cypress.Commands.add("validate200ResponseCode", (url) => {
+    let result;
+    result = cy.request("https://api.plushbezlimitu.pl/jcr/files/file/adp/files/" + url)
+    result.its("status").should("equal", 200)
+
+})
+
+Cypress.Commands.add("validate200ResponseCodeSmoke", (url) => {
     let result;
     result = cy.request(url)
-    result.its("status").should("equal",200)
-   
+    result.its("status").should("equal", 200)
+
 })
 
 

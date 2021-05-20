@@ -23,8 +23,8 @@ class Plush_main_page {
             // .reload({ timeout: 5000 })
             .visit(Cypress.env("plush_bez_limitu_abonament_listing_UAT"))
             .validate200ResponseCodeSmoke(Cypress.env("plush_bez_limitu"), { timeout: 30000 })
-            // .verifyURLadress(Cypress.env("plush_bez_limitu"))
-    
+        // .verifyURLadress(Cypress.env("plush_bez_limitu"))
+
     }
     //metoa akceptująca pliki cookies oraz regulamin rodo
     clearCookies() {
@@ -35,7 +35,7 @@ class Plush_main_page {
     acceptRodo() {
         cy
             .acceptRodo(mainPageSelector.rodoAcceptButton)
-            .get(mainPageSelector.mainLogo,{timeout:20000}).last().click({force:true})
+            .get(mainPageSelector.mainLogo, { timeout: 20000 }).last().click({ force: true })
             .verifyURLadress(Cypress.env("plush_bez_limitu"))
 
 
@@ -52,7 +52,7 @@ class Plush_main_page {
         cy
             .get(mainPageSelector.modalId)
             .find(mainPageSelector.popUpAllElements)
-            .contains(newNumberText, {timeout:15000})
+            .contains(newNumberText, { timeout: 15000 })
             .click({ force: true });
 
     }
@@ -65,16 +65,6 @@ class Plush_main_page {
             .click({ force: true })
 
     }
-
-
-
-
-
-
-
-
-
-
 
 
 }

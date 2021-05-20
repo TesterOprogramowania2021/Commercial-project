@@ -1,5 +1,4 @@
 {
-    
     "pricingList": [
         "REGULAMINY PLUSH ABO",
         "Aktualne cenniki",
@@ -205,14 +204,6 @@
         "Regulamin świadczenia usług telekomunikacyjnych przez Polkomtel Sp. z o.o. - Na Kartę",
         "Regulamin świadczenia usług telekomunikacyjnych przez Polkomtel Sp. z o.o. dla Abonentów Plus Mix",
         "Regulamin świadczenia usług telekomunikacyjnych przez Polkomtel Sp. z o.o. dla Abonentów Simplus/Sami Swoi"
- 
-        
-        
-
-
-
-
-
     ],
     "urlPricingList": [
         "regulations_lp/plush/regulaminy/regulaminy_plush_abo/20210113plushaboIII.pdf",
@@ -416,12 +407,5 @@
         "regulations_lp/plush/regulaminy/rsut/archiwalne/RSUT_Na_Karte.pdf",
         "regulations_lp/plush/regulaminy/rsut/archiwalne/RSUT_dla_Abonentow_Plus_Mix.pdf",
         "regulations_lp/plush/regulaminy/rsut/archiwalne/RSUT_Abonentow_SimplusSami_Swoi.pdf"
-        
-        
-       
-        
     ]
- 
-       
-        
 }

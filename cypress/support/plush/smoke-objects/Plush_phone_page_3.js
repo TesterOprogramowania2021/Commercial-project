@@ -19,10 +19,10 @@ class Plush_phone_page {
             .should("be.visible")
 
     }
-    checkedPriceAbo(priceText){
-        
-            
-            cy.get(phonePageSelectors.aboPrice).contains(priceText)
+    checkedPriceAbo(priceText) {
+
+
+        cy.get(phonePageSelectors.aboPrice).contains(priceText)
     }
 
 }
