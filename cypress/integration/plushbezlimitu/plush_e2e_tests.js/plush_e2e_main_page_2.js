@@ -63,7 +63,7 @@ describe("Secend part of E2E plush tests main page",()=>{
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL);
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
     })
-    it.only("Voice/ACQ/Simo/Ind/Abo/24months", () => {
+    it("Voice/ACQ/Simo/Ind/Abo/24months", () => {
         plush_main_page.clickOffertFirstRow(data.textNoPhone);
         plush_main_page.clickOptionWhatYouNeed(data.textNewNumber);
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
@@ -80,7 +80,7 @@ describe("Secend part of E2E plush tests main page",()=>{
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
 
     })
-    it("Placing an order for ACQ in the offer for 30 PLN / month without the device for an indefinite period",()=>{
+    it("Voice/ACQ/Simo/Abo/IndeterminateTime",()=>{
         plush_main_page.clickOffert30zlNoLimit(data.textNoPhone);
         plush_main_page.clickOptionWhatYouNeed(data.textNewNumber);
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
@@ -96,7 +96,7 @@ describe("Secend part of E2E plush tests main page",()=>{
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL);
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
     })
-    it("Placing an order for MNP in the offer for 30 PLN /month with the device",()=>{
+    it.only("Placing an order for MNP in the offer for 30 PLN /month with the device",()=>{
         plush_main_page.clickOffertFirstRow(data.textGetPhone)
         plush_phones_pages.clickButtonIwontMoveMobileNumber(data.iWontMoveNumber);
         plush_phones_pages.checkedRadiobutton30zlSelection(data.radioButton30zl); 

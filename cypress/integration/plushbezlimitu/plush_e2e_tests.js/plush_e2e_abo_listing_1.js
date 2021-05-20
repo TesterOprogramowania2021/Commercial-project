@@ -65,7 +65,7 @@ describe("First part of E2E plush tests abonament listing page", () =>{
         
     })
    
-    it.only("Voice/ACQ/Simo/Ind/Abo/24months",()=>{
+    it("Voice/ACQ/Simo/Ind/Abo/24months",()=>{
         plush_listing_subscription.getOffer30zlFor24month(data.textNoPhone)
         plush_main_page.clickOptionWhatYouNeed(data.textNewNumber);
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
@@ -81,7 +81,7 @@ describe("First part of E2E plush tests abonament listing page", () =>{
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
 
     })
-    it("Placing an order for ACQ in the offer for 30 PLN / month without the device for an indefinite period",()=>{
+    it("Voice/ACQ/Simo/Abo/IndeterminateTime",()=>{
         plush_listing_subscription.getOffer30zlForAllTime(data.textNoPhone)
         plush_main_page.clickOptionWhatYouNeed(data.textNewNumber);
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
@@ -97,23 +97,22 @@ describe("First part of E2E plush tests abonament listing page", () =>{
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL);
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
     })
-    it("Placing an order for ACQ in the offer for 60 PLN / month with the no device for 24 months.",()=>{
+    it("Voice/ACQ/Simo/Abo/24months",()=>{
         plush_listing_subscription.getOffer60zlForAllTime(data.textNoPhone)
         plush_main_page.clickOptionWhatYouNeed(data.textNewNumber);
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[1])
         plush_person_formulage_page.fillFormulage(data.userDataFormulage[0],data.userDataFormulage[1],data.userDataFormulage[2],data.userDataFormulage[3],data.userDataFormulage[4],data.userDataFormulage[5],data.step1URL)
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[1])
-        plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2],data.adressDataFormulage[3],data.adressDataFormulage[4]);
+        plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2],data.adressDataFormulage[3],data.adressDataFormulage[4])
+        plush_adress_formulage_page.setForOfDocumentType(1)
         plush_adress_formulage_page.clickButtonNext();
         plush_step3_page.checkedMainPrice(data.prices[1], data.step3URL);
         plush_step3_page.clickcheckboxAllAccepts()
         plush_step3_page.clickAcceptButton();
-        plush_step3_page.acceptPopUp(data.popUpAcceptDataNoDevice)
-        plush_step3_page.clickConfirmButton();
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL);
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
     })
-    it("Placing an order for ACQ in the offer for 60 PLN / month with the  device for 24 months.",()=>{
+    it("Voice/ACQ/Device/Abo/24months",()=>{
         plush_listing_subscription.getOffer60zlForAllTime(data.textGetPhone)
         plush_phones_pages.clickButtonNewNumber2()
         plush_phones_pages.checkedRadiobutton60zlSelection(data.radioButton30zl); 
@@ -136,7 +135,7 @@ describe("First part of E2E plush tests abonament listing page", () =>{
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
        
     })
-    it("Placing an order for MNP in the offer for 30 PLN /month with the device",()=>{
+    it.only("Placing an order for MNP in the offer for 30 PLN /month with the device",()=>{
         plush_listing_subscription.getOffer30zlFor24month(data.textGetPhone)
         plush_phones_pages.clickButtonIwontMoveMobileNumber(data.iWontMoveNumber);
         plush_phones_pages.checkedRadiobutton30zlSelection(data.radioButton30zl); 
