@@ -56,6 +56,15 @@ class Plush_main_page {
             .click({ force: true });
 
     }
+    clickOffert30zlNoLimit(getText) {
+        cy
+            .get(mainPageSelector.desktopOffersFirstRow)
+            .find(mainPageSelector.desktopOffersKolButtons)
+            .eq(1)
+            .contains(getText)
+            .click({ force: true })
+
+    }
 
 
 

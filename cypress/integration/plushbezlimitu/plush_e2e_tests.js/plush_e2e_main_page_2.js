@@ -61,6 +61,37 @@ describe("Secend part of E2E plush tests main page",()=>{
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL);
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
     })
+    it("Placing an order for ACQ in the offer of 30 PLN / month with no device", () => {
+        plush_main_page.clickOffertFirstRow(data.textNoPhone);
+        plush_main_page.clickOptionWhatYouNeed(data.textNewNumber);
+        plush_person_formulage_page.fillFormulage(data.userDataFormulage[0],data.userDataFormulage[1],data.userDataFormulage[2],data.userDataFormulage[3],data.userDataFormulage[4],data.userDataFormulage[5],data.step1URL)
+        plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2],data.adressDataFormulage[3],data.adressDataFormulage[4]);
+        plush_adress_formulage_page.clickButtonNext();
+        plush_step3_page.checkedMainPrice(data.prices[0], data.step3URL);
+        plush_step3_page.clickcheckboxAllAccepts()
+        plush_step3_page.clickAcceptButton();
+        plush_step3_page.acceptPopUp(data.popUpAcceptDataNoDevice)
+        plush_step3_page.clickConfirmButton();
+        plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL);
+        plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
+
+    })
+    it.only("Placing an order for ACQ in the offer for 30 PLN / month without the device for an indefinite period",()=>{
+        plush_main_page.clickOffert30zlNoLimit(data.textNoPhone);
+        plush_main_page.clickOptionWhatYouNeed(data.textNewNumber);
+        plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
+        plush_person_formulage_page.fillFormulage(data.userDataFormulage[0],data.userDataFormulage[1],data.userDataFormulage[2],data.userDataFormulage[3],data.userDataFormulage[4],data.userDataFormulage[5],data.step1URL)
+        plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
+        plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2],data.adressDataFormulage[3],data.adressDataFormulage[4]);
+        plush_adress_formulage_page.clickButtonNext();
+        plush_step3_page.checkedMainPrice(data.prices[0], data.step3URL);
+        plush_step3_page.clickcheckboxAllAccepts()
+        plush_step3_page.clickAcceptButton();
+        plush_step3_page.acceptPopUp(data.popUpAcceptDataNoDevice)
+        plush_step3_page.clickConfirmButton();
+        plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage,data.stepLast4URL);
+        plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
+    })
 
 
 })

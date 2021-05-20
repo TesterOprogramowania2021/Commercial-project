@@ -71,9 +71,7 @@ class Plush_phones_pages {
             .contains(checkedText,{timeout: 5000})
             .first({timeout: 5000}).should("have.css", "background-image", "linear-gradient(rgb(255, 218, 93), rgb(250, 193, 0))",{timeout:3000})
             .click({force: true})
-            // .wait(3000)
-            // .verifyURLadress(phoneURL, { timeout: 20000 })
-            
+                      
             
     }
     clickButtonIwontMoveMobileNumber(newNumberText){
