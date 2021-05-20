@@ -10,7 +10,7 @@ import Plush_step3_page from "../../../support/plush/smoke-objects/Plush_step3_p
 import Plush_finished_page from "../../../support/plush/smoke-objects/Plush_finished_page_7";
 import Plush_listing_subscription from "../../../support/plush/e2e-objects/Plush_listing_subscription_10";
 
-describe("First part of E2E plush tests", () =>{ 
+describe("First part of E2E plush tests abonament listing page", () =>{ 
     const plush_main_page = new Plush_main_page();
     const plush_phones_pages  = new Plush_phones_pages();
     const plush_phone_page = new Plush_phone_page();
@@ -21,6 +21,7 @@ describe("First part of E2E plush tests", () =>{
     const plush_listing_subscription = new Plush_listing_subscription()
    
 
+ 
     before(() => {
         cy.fixture("plushData").then(data => {
             globalThis.data = data;

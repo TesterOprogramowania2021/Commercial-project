@@ -8,7 +8,8 @@ const mainPageSelector = {
     desktopOffersFirstRow: ".offers > .desktop-offer",
     desktopOffersKolButtons: ".col-buttons",
     modalId: "#modal",
-    popUpAllElements: ".plush-popup-offers"
+    popUpAllElements: ".plush-popup-offers",
+    mainLogo: ".LogoComponent"
 
 
 }
@@ -20,7 +21,7 @@ class Plush_main_page {
     getPlushMainPage() {
         cy
             // .reload({ timeout: 5000 })
-            .visit(Cypress.env("plush_bez_limitu"))
+            .visit(Cypress.env("plush_bez_limitu_abonament_listing_UAT"))
             .validate200ResponseCodeSmoke(Cypress.env("plush_bez_limitu"), { timeout: 30000 })
             // .verifyURLadress(Cypress.env("plush_bez_limitu"))
     
@@ -34,6 +35,10 @@ class Plush_main_page {
     acceptRodo() {
         cy
             .acceptRodo(mainPageSelector.rodoAcceptButton)
+            .get(mainPageSelector.mainLogo,{timeout:20000}).last().click({force:true})
+            .verifyURLadress(Cypress.env("plush_bez_limitu"))
+
+
     }
     clickOffertFirstRow(getText) {
         cy
