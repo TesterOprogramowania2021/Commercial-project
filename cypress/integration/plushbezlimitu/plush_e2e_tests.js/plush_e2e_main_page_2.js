@@ -43,7 +43,7 @@ describe("Secend part of E2E plush tests main page", () => {
 
 
     })
-    it("Voice/ACQ/Device/Ind/Abo/24months", () => {
+    it("Ind/Voice/ACQ/Device/Abo/24months", () => {
         plush_main_page.clickOffertFirstRow(data.textGetPhone);
         plush_phones_pages.clickButtonNewNumber2();
         plush_phones_pages.checkedRadiobutton30zlSelection(data.radioButton30zl);
@@ -63,7 +63,7 @@ describe("Secend part of E2E plush tests main page", () => {
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage, data.stepLast4URL);
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
     })
-    it("Voice/ACQ/Simo/Ind/Abo/24months", () => {
+    it("Ind/Voice/ACQ/Simo/Abo/24months", () => {
         plush_main_page.clickOffertFirstRow(data.textNoPhone);
         plush_main_page.clickOptionWhatYouNeed(data.textNewNumber);
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
@@ -80,7 +80,7 @@ describe("Secend part of E2E plush tests main page", () => {
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
 
     })
-    it("Voice/ACQ/Simo/Abo/IndeterminateTime", () => {
+    it("Ind/Voice/ACQ/Simo/Mix/IndeterminateTime", () => {
         plush_main_page.clickOffert30zlNoLimit(data.textNoPhone);
         plush_main_page.clickOptionWhatYouNeed(data.textNewNumber);
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
@@ -96,20 +96,20 @@ describe("Secend part of E2E plush tests main page", () => {
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage, data.stepLast4URL);
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
     })
-    it.only("Placing an order for MNP in the offer for 30 PLN /month with the device", () => {
+    it("Ind/Voice/MNP/Device/Abo/24months", () => {
         plush_main_page.clickOffertFirstRow(data.textGetPhone)
-        plush_phones_pages.clickButtonIwontMoveMobileNumber(data.iWontMoveNumber);
-        plush_phones_pages.checkedRadiobutton30zlSelection(data.radioButton30zl);
+        plush_phones_pages.clickButtonIwontMoveMobileNumber(data.iWontMoveNumber)
+        plush_phones_pages.checkedRadiobutton30zlSelection(data.radioButton30zl)
         plush_phones_pages.clickCheckedButtonPhone(data.checked, data.phoneURL)
-        plush_phone_page.clickGetNumberButton(data.step1URL);
+        plush_phone_page.clickGetNumberButton(data.step1URL)
         plush_person_formulage_page.setOTPNumber(data.otpNumber)
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
-        plush_person_formulage_page.setAndAcceptPassword(data.uatPassword);
-        plush_person_formulage_page.setPopUPWebOperator(data.webOperators[1]);
-        plush_person_formulage_page.setPopUPWebOperatorService(data.services[2]);
-        plush_person_formulage_page.setNumberDateTransfer3(data.latPromotionTime);
+        plush_person_formulage_page.setAndAcceptPassword(data.uatPassword)
+        plush_person_formulage_page.setPopUPWebOperator(data.webOperators[2])
+        plush_person_formulage_page.setPopUPWebOperatorService(data.services[1])
+        plush_person_formulage_page.setNumberDateTransfer2(data.cardDataTransfer)
         plush_person_formulage_page.fillFormulage(data.userDataFormulage[0], data.userDataFormulage[1], data.userDataFormulage[2], data.userDataFormulage[3], data.userDataFormulage[4], data.userDataFormulage[5], data.step1URL)
-        plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2], data.adressDataFormulage[3], data.adressDataFormulage[4]);
+        plush_adress_formulage_page.fillAdressFormulage(data.adressDataFormulage[0], data.adressDataFormulage[1], data.adressDataFormulage[2], data.adressDataFormulage[3], data.adressDataFormulage[4])
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
         plush_adress_formulage_page.selectDocument(data.documentName[2])
         plush_adress_formulage_page.fillDocumentFormulageContractOrder(data.userDataFormulage[0], data.userDataFormulage[3])
@@ -122,7 +122,7 @@ describe("Secend part of E2E plush tests main page", () => {
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage, data.stepLast4URL)
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
     })
-    it("Placing an order for an MNP in the offer for 30 PLN /month without device", () => {
+    it.only("Placing an order for an MNP in the offer for 30 PLN /month without device", () => {
         plush_main_page.clickOffertFirstRow(data.textNoPhone)
         plush_main_page.clickOptionWhatYouNeed(data.iwontNewNumberInPlush)
         plush_person_formulage_page.setOTPNumber(data.otpNumber)

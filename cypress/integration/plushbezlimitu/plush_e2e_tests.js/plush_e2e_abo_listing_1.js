@@ -41,7 +41,7 @@ describe("First part of E2E plush tests abonament listing page", () => {
 
     })
 
-    it("Voice/ACQ/Device/Ind/Abo/24months", () => {
+    it("Ind/Voice/ACQ/Device/Abo/24months", () => {
         plush_listing_subscription.getOffer30zlFor24month(data.textGetPhone)
         plush_phones_pages.clickButtonNewNumber2()
         plush_phones_pages.checkedRadiobutton30zlSelection(data.radioButton30zl);
@@ -65,7 +65,7 @@ describe("First part of E2E plush tests abonament listing page", () => {
 
     })
 
-    it("Voice/ACQ/Simo/Ind/Abo/24months", () => {
+    it("ind/Voice/ACQ/Simo/Abo/24months", () => {
         plush_listing_subscription.getOffer30zlFor24month(data.textNoPhone)
         plush_main_page.clickOptionWhatYouNeed(data.textNewNumber);
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
@@ -81,7 +81,7 @@ describe("First part of E2E plush tests abonament listing page", () => {
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
 
     })
-    it("Voice/ACQ/Simo/Abo/IndeterminateTime", () => {
+    it("Ind/Voice/ACQ/Simo/Abo/IndeterminateTime", () => {
         plush_listing_subscription.getOffer30zlForAllTime(data.textNoPhone)
         plush_main_page.clickOptionWhatYouNeed(data.textNewNumber);
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
@@ -97,7 +97,7 @@ describe("First part of E2E plush tests abonament listing page", () => {
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage, data.stepLast4URL);
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
     })
-    it("Voice/ACQ/Simo/Abo/24months", () => {
+    it("Ind/Voice/ACQ/Simo/Abo/24months", () => {
         plush_listing_subscription.getOffer60zlForAllTime(data.textNoPhone)
         plush_main_page.clickOptionWhatYouNeed(data.textNewNumber);
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[1])
@@ -112,7 +112,7 @@ describe("First part of E2E plush tests abonament listing page", () => {
         plush_finished_page.assertThenksTextAndOrderNumber(data.thxTextLastPage, data.stepLast4URL);
         plush_finished_page.getOrderNumberToFile(data.pathToOrderNumbersFile)
     })
-    it("Voice/ACQ/Device/Abo/24months", () => {
+    it("Ind/Voice/ACQ/Device/Abo/24months", () => {
         plush_listing_subscription.getOffer60zlForAllTime(data.textGetPhone)
         plush_phones_pages.clickButtonNewNumber2()
         plush_phones_pages.checkedRadiobutton60zlSelection(data.radioButton30zl);
@@ -234,7 +234,7 @@ describe("First part of E2E plush tests abonament listing page", () => {
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
         plush_person_formulage_page.setOTPNumber(data.mixPlusNumber)
         plush_person_formulage_page.setAndAcceptPassword(data.uatPassword);
-//sdsd
+
 
 
 
