@@ -234,7 +234,7 @@ describe("First part of E2E plush tests abonament listing page", () => {
         plush_person_formulage_page.verifyPriceOnFormulage(data.prices[0])
         plush_person_formulage_page.setOTPNumber(data.mixPlusNumber)
         plush_person_formulage_page.setAndAcceptPassword(data.uatPassword);
-
+//sdsd
 
 
 
